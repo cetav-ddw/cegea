@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eje Ambiental</title>
 </head>
+
 <body>
     <header>
         <!--
@@ -15,7 +17,7 @@
         <nav>
             <ul class="main-nav">
                 <li class="main-nav__item">
-                    <a href="#">inicio</a>
+                    <a href="#">Inicio</a>
                 </li>
                 <li class="main-nav__item">
                     <a href="#">¿Quiénes somos?</a>
@@ -24,9 +26,11 @@
                     <a href="#">Programas</a>
                 </li>
                 <li class="main-nav__item main-nav__item--volunteer">
+                    <!-- preguntar que es mas conveniente btn con un a dentro o solo un a -->
                     <a href="#">Voluntatiado</a>
                 </li>
                 <li class="main-nav__item main-nav__item--donate">
+                    <!-- preguntar que es mas conveniente btn con un a dentro o solo un a -->
                     <a href="#">Donar</a>
                 </li>
             </ul>
@@ -41,36 +45,37 @@
             <ul class="activities">
                 <li>
                     <h3>Club Eco-manualidades</h3>
-                    <a href="#">más información</a>
                     <span>
                         <time datetime="2019-08">Agosto</time>
                         <time datetime="2020-08-13">13</time>
                     </span>
+                    <a href="#" class="info">Más información</a>
                 </li>
                 <li>
                     <h3>Club mensual de jardinería</h3>
-                    <a href="#">más información</a>
                     <span>
                         <time datetime="2019-10">Octubre</time>
                         <time datetime="2019-10-20">20</time>
                     </span>
+                    <a href="#" class="info">Más información</a>
                 </li>
                 <li>
                     <h3>titulo</h3>
-                    <a href="#">más información</a>
                     <span>
                         <time datetime="2019-08">Agosto</time>
                         <time datetime="2020-08-13">13</time>
                     </span>
+                    <a href="#" class="info">Más información</a>
                 </li>
             </ul>
-            <a href="#">Más astividades</a>
+            <a href="#">Más actividades</a>
         </section>
     </main>
     <div class="pointing-arrow">
-    <!--
-        flecha señalando abajo ¯\_(´°°｀)_/¯
-    -->
+        <!--
+            flecha señalando abajo ¯\_(´°°｀)_/¯
+            svg
+        -->
     </div>
     <section class="projects">
         <!--
@@ -102,15 +107,28 @@
         <h2>Nuestros logros</h2>
         <div>
             <h3>Aves rescatadas</h3>
+            <img src="" alt="">
+            <div class="porcentaje"></div>
         </div>
         <div>
             <h3>Árboles sembrados</h3>
+            <img src="" alt="">
+            <div class="porcentaje"></div>
         </div>
         <div>
             <h3>Voluntarios</h3>
+            <img src="" alt="">
+            <div class="porcentaje"></div>
         </div>
         <div>
-            <h3></h3>
+            <h3>Interés educativo</h3>
+            <img src="" alt="">
+            <div class="porcentaje"></div>
+        </div>
+        <div>
+            <h3>Bandera azul</h3>
+            <img src="" alt="">
+            <div class="porcentaje"></div>
         </div>
     </section>
     <footer>
@@ -119,38 +137,46 @@
                 informacion de contacto
             -->
             <h3>Contacto</h3>
-            <span class="contacto-mandated">
-                <img src="" alt="" class="contact-icon--mandated">
-                <p>Encargado de gestión ambiental: Lidia Noches</p>
-            </span>
-            <span class="contacto-mail">
-                <img src="" alt="" class="contact-icon--mail">
-                <p>
-                    correo electronico: 
-                    <a href="mailto:lnoches@parquelalibertad.com">lnoches@parquelalibertad.com</a>
-                </p>
-            </span>
-            <span class="contacto-phone">
-                <img src="" alt="" class="contact-icon--phone">
-                <p>Teléfono: 2276-9400 ext:2017</p>
-            </span>
+            <ul>
+                <li class="contacto-mandated">
+                    <img src="" alt="" class="contact-icon--mandated">
+                    <p>Encargado de gestión ambiental: Lidia Noches</p>
+                </li>
+                <li class="contacto-mail">
+                    <img src="" alt="" class="contact-icon--mail">
+                    <p>
+                        correo electronico:
+                        <a href="mailto:lnoches@parquelalibertad.com">lnoches@parquelalibertad.com</a>
+                        <!-- consultar que se puede hacer con este link -->
+                    </p>
+                </li>
+                <li class="contacto-phone">
+                    <img src="" alt="" class="contact-icon--phone">
+                    <p>Teléfono: 2276-9400 ext:2017</p>
+                </li>
+            </ul>
         </section>
-        <section class="networks">
+        <section>
+            <div class="networks">
             <!--
                 link a las redes sociales del eje ambiental
             -->
-            <h3>Síganos en redes sociales</h3>
-            <a href="#">
-                <img src="" alt="" class="network-icon--facebook">
-            </a>
-        </section>
-        <section class="allies">
+                <h3>Síganos en redes sociales</h3>
+                <a href="#">
+                    <img src="" alt="" class="network-icon--facebook">
+                </a>
+            </div>
+            <div class="allies">
             <!--
                 informacion relacionada a los aliados culturales
             -->
-            <img src="" alt="" class="allies-icon--ministery">
-            <img src="" alt="" class="allies-icon--parquell">
+                <ul>
+                    <li><img src="" alt="" class="allies-icon--ministery"></li>
+                    <li><img src="" alt="" class="allies-icon--parquell"></li>
+                </ul>
+            </div>
         </section>
     </footer>
 </body>
+
 </html>

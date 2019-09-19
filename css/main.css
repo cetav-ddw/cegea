@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Palanquin+Dark|Quicksand&display=swap");
+body {
+  margin: 0; }
+
+header {
+  background-color: #5f9750;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  padding: 3rem 1rem 2rem 1rem; }
+  @media (min-width: 768px) {
+    header {
+      grid-gap: 1rem;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr;
+      padding: 4rem 1.8rem 3rem 3rem; } }
+  @media (min-width: 1024px) {
+    header {
+      grid-gap: 1rem; } }
+  @media (min-width: 1320px) {
+    header {
+      grid-gap: 2rem; } }
+
+.title {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
+  @media (min-width: 768px) {
+    .title {
+      font-size: 2rem; } }
+
+.main-nav__cont {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr; }
+  @media (min-width: 768px) {
+    .main-nav__cont {
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      margin: 0;
+      padding: 0; } }
+  @media (min-width: 1024px) {
+    .main-nav__cont {
+      grid-gap: 1rem; } }
+  @media (min-width: 1320px) {
+    .main-nav__cont {
+      grid-gap: 2rem; } }
+
+.btn-menu {
+  background-color: transparent;
+  border: none;
+  float: right; }
+  .btn-menu::after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .btn-menu {
+      display: none; } }
+
+.btn-menu__img {
+  max-width: 22px; }
+
+.main-nav__item {
+  list-style: none;
+  padding: 1.2rem 1rem 0.2rem;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .main-nav__item {
+      padding: 1.2rem 1rem 1.2rem; } }
+  @media (min-width: 1024px) {
+    .main-nav__item {
+      padding: 1.8rem 0rem; } }
+  @media (min-width: 1320px) {
+    .main-nav__item {
+      padding: 2rem 0rem; } }
+
+.main-nav__item--donate {
+  background-color: #eb751f; }
+
+.main-nav__item--vol {
+  background-color: #d4ab20; }
+
+.main-nav__link {
+  color: white;
+  text-decoration: none; }
+
+.none {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

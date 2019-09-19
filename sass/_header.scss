@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+header {
+  background-color: $green-light;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  padding: 3rem 1rem 2rem 1rem;
+
+  @media (min-width: $breakpoint-md) {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    padding: 4rem 1.8rem 3rem 3rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    grid-gap: 1rem;
+  }
+  @media (min-width: $breakpoint-xl) {
+    grid-gap: 2rem;
+  }
+}
+
+.title {
+  color: white;
+  font-size: 1.6rem;
+  font-family: $font-titles;
+  @media (min-width: $breakpoint-md) {
+    font-size: $h1-size;
+  }
+}

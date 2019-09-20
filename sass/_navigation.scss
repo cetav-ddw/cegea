@@ -1,0 +1,83 @@
+.cont-btn {
+  display: block;
+  float: right;
+  height: 23px;
+  margin-top: 1rem;
+  width: 23px;
+  @media (min-width: $breakpoint-md) {
+    display: none;
+  }
+}
+.btn-menu {
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  height: 22px;
+  width: 22px;
+  &::after {
+    clear: both;
+  }
+}
+
+.main-nav__cont {
+  margin: 0;
+  padding: 0;
+  
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.main-nav__item {
+  list-style: none;
+  margin: 1.5rem;
+  padding: 1.2rem 1rem;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    align-self: baseline;
+    display: flex;
+    margin: 0 0.3rem;
+    padding: 1.2rem 1rem 0rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    padding: 1.8rem 0rem;
+    margin: 0 0.8rem;
+  }
+  @media (min-width: $breakpoint-xl) {
+    padding: 2rem 0rem;
+    margin: 0 1rem;
+  }
+}
+
+.main-nav__link--donate {
+  background-color: $orange;
+  padding: 1.5rem;
+}
+
+.main-nav__link--vol {
+  background-color: $yellow;
+  padding: 1.5rem;
+}
+
+.main-nav__link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu-closed {
+  background-image: url("../images/icons/menu/menu-closed.svg");
+}
+.menu-opened {
+  background-image: url("../images/icons/menu/menu.svg");
+}
+
+.responsive {
+  display: none;
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -11,14 +11,12 @@
 
 <body>
   <header role="banner">
-    <h1 class="title">Dimensión ambiental</h1>
+    <h1 class="main-title">Dimensión ambiental</h1>
     <nav role="navigation" class="main-nav">
       <div class="cont-btn">
-        <button id="btnMenu-js" class="btn-menu">
-          <img id="menuImg-js" class="btn-menu__img" src="images/icons/menu/menu.svg" alt="navegación principal">
-        </button>
+        <button id="btn-menu" class="btn-menu menu-opened"></button>
       </div>
-      <ul id="contMenu-js" class="main-nav__cont">
+      <ul id="cont-menu" class="main-nav__cont responsive">
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Inicio</a>
         </li>
@@ -28,28 +26,28 @@
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Programas</a>
         </li>
-        <li class="main-nav__item main-nav__item--vol">
-          <a class="main-nav__link" href="#">Voluntariado</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--vol" href="#">Voluntariado</a>
         </li>
-        <li class="main-nav__item main-nav__item--donate">
-          <a class="main-nav__link" href="#">Donar</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link main-nav__link--donate" href="#">Donar</a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-info">
-    <section class="act">
-      <h2 class="act__title">Próximas actividades</h2>
-      <ul class="act__cont">
-        <li class="act__item">
-          <h3 class="act__item-title">Club Eco-manualidades</h3>
-          <span class="act__date">
-            <time class="act__month" datetime="2019-08">Agosto</time>
-            <time class="act__day" datetime="2020-08-13">13</time>
+  <main role="main" class="main-info">
+    <section class="agenda">
+      <h2 class="agenda__title">Próximas actividades</h2>
+      <ul class="agenda__cont">
+        <li class="agenda__item">
+          <h3 class="agenda__item-title">Club Eco-manualidades</h3>
+          <span class="agenda__date">
+            <time class="agenda__month" datetime="2019-08">Agosto</time>
+            <time class="agenda__day" datetime="2020-08-13">13</time>
           </span>
-          <a href="#" class="act__link">Más información</a>
+          <a href="#" class="agenda__link">Más información</a>
         </li>
-        <li class="act__item">
+        <li class="agenda__item">
           <h3>Club mensual de jardinería</h3>
           <span>
             <time datetime="2019-10">Octubre</time>
@@ -57,7 +55,7 @@
           </span>
           <a href="#" class="info">Más información</a>
         </li>
-        <li class="act__item">
+        <li class="agenda__item">
           <h3>titulo</h3>
           <span>
             <time datetime="2019-08">Agosto</time>
@@ -66,7 +64,7 @@
           <a href="#" class="info">Más información</a>
         </li>
       </ul>
-      <a class="act__acts-link" href="#">Más actividades</a>
+      <a class="agenda__acts-link" href="#">Más actividades</a>
     </section>
   </main>
   <div class="point-arrow">

@@ -1,53 +1,40 @@
 (function () {
-  const btnMenu = document.getElementById('btnMenu-js');
-  const imgMenu = document.getElementById('menuImg-js');
-  const menuItem = document.getElementById('contMenu-js');
-  const mq = window.matchMedia('(min-width: 768px)');
-  let status = true;
-  let isMediaBreakpoint;
+  const btnMenu = document.getElementById('btn-menu');
+  const menuContainer = document.getElementById('cont-menu');
+  let isClosedMenu = true;
 
-  function widthChange(mediaQuery) {
-    if (mediaQuery.matches) {
-      menuItem.classList.remove('none');
-      isMediaBreakpoint = false;
-    } else {
-
-      menuItem.classList.add('none');
-      isMediaBreakpoint = true;
-    }
-  }
   function changeSrc() {
-    imgMenu.removeAttribute('src');
-    if (!status) {
-
-      imgMenu.setAttribute('src', 'images/icons/menu/menu.svg');
+    if (!isClosedMenu) {
+      btnMenu.classList.remove('menu-opened');
+      btnMenu.classList.add('menu-closed');
     } else {
-
-      imgMenu.setAttribute('src', 'images/icons/menu/menu-closed.svg');
+      btnMenu.classList.remove('menu-closed');
+      btnMenu.classList.add('menu-opened');
     }
   }
+
   function closeMenu() {
-    menuItem.classList.add('none');
+    menuContainer.classList.add('show');
+    menuContainer.classList.remove('hide');
   }
 
   function openMenu() {
-    menuItem.classList.remove('none');
+    menuContainer.classList.add('hide');
+    menuContainer.classList.remove('show');
   }
 
-  function menu(e) {
-    if (status) {
-      openMenu();
-    } else {
+  function menu() {
+    console.log('si hizo click')
+    if (isClosedMenu) {
+      console.log('el menu abierto se cierra');
       closeMenu();
+    } else {
+      console.log('el menu cerrado se abre');
+      openMenu();
     }
     changeSrc();
-    status = !status;
+    isClosedMenu = !isClosedMenu;
   }
 
-  btnMenu.addEventListener('touchend', () => { if (!isMediaBreakpoint) menu() });
-  btnMenu.addEventListener('click', () => { if (isMediaBreakpoint) menu() });
-
-  mq.addListener(widthChange);
-
-  widthChange(mq);
+  btnMenu.addEventListener('click', menu);
 })();

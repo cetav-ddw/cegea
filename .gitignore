@@ -1,8 +1,11 @@
 #   cache de sass    #
 ######################
-
 .sass-cache/
 *.css.map
+
+#        css         #
+######################
+css/
 
 # OS generated files #
 ######################

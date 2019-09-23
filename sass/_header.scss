@@ -1,16 +1,11 @@
 header {
   background-color: $green-light;
   display: flex;
-  grid-gap: 0.5rem;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 3rem 1rem 2rem;
 
   @media (min-width: $breakpoint-md) {
     padding: 4rem 1.8rem 3rem 3rem;
-  }
-  @media (min-width: $breakpoint-lg) {
-  }
-  @media (min-width: $breakpoint-xl) {
   }
 }
 

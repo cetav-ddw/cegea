@@ -1,0 +1,19 @@
+header {
+  background-color: $green-light;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 1rem 2rem;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 4rem 1.8rem 3rem 3rem;
+  }
+}
+
+.main-title {
+  color: white;
+  font-family: $font-titles;
+  font-size: 1.6rem;
+  @media (min-width: $breakpoint-md) {
+    font-size: $h1-size;
+  }
+}

@@ -1,19 +1,15 @@
-#   cache de sass    #
-######################
+.sass-cache
+*.css
 
-.sass-cache/
-*.css.map
+/node_modules
 
-# OS generated files #
-######################
+# misc
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-#  cache de vscode   #
-######################
-.vscode
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

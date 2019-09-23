@@ -27,6 +27,12 @@
     width: 22px;
   }
 
+  .menu-open & {
+    &:before {
+      background-image: url("../images/icons/menu/menu-closed.svg");
+    }
+  }
+
   @media (min-width: $breakpoint-md) {
     display: none;
   }
@@ -82,8 +88,4 @@
 .main-nav__link {
   color: white;
   text-decoration: none;
-}
-
-.menu-closed {
-  background-image: url("../images/icons/menu/menu-closed.svg");
 }

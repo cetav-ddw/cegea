@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin+Dark|Quicksand&display=swap");
+body {
+  font-family: "Quicksand", Arial, Verdana, sans-serif;
+  margin: 0; }
+
 header {
   background-color: #5f9750;
   display: flex;
-  grid-gap: 0.5rem;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 3rem 1rem 2rem; }
   @media (min-width: 768px) {
     header {
@@ -29,14 +32,20 @@ header {
 
 .btn-menu {
   background-color: transparent;
-  background-size: cover;
-  border: none;
-  height: 22px;
-  width: 22px; }
-  .btn-menu::after {
-    clear: both; }
+  border: 0;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold; }
+  .btn-menu:before {
+    background: transparent url("../images/icons/menu/menu.svg") no-repeat;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 22px;
+    width: 22px; }
 
 .main-nav__cont {
+  display: none;
   margin: 0;
   padding: 0; }
   @media (min-width: 768px) {
@@ -54,14 +63,14 @@ header {
       align-self: baseline;
       display: flex;
       margin: 0 0.3rem;
-      padding: 1.2rem 1rem 0rem; } }
+      padding: 1.2rem 1rem 0; } }
   @media (min-width: 1024px) {
     .main-nav__item {
-      padding: 1.8rem 0rem;
+      padding: 1.8rem 0;
       margin: 0 0.8rem; } }
   @media (min-width: 1320px) {
     .main-nav__item {
-      padding: 2rem 0rem;
+      padding: 2rem 0;
       margin: 0 1rem; } }
 
 .main-nav__link--donate {
@@ -78,24 +87,3 @@ header {
 
 .menu-closed {
   background-image: url("../images/icons/menu/menu-closed.svg"); }
-
-.menu-opened {
-  background-image: url("../images/icons/menu/menu.svg"); }
-
-.responsive {
-  display: none; }
-  @media (min-width: 768px) {
-    .responsive {
-      display: flex;
-      justify-content: space-around; } }
-
-body {
-  margin: 0; }
-
-.hide {
-  display: none; }
-
-.show {
-  display: block; }
-
-/*# sourceMappingURL=main.css.map */

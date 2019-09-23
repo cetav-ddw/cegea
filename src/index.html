@@ -6,15 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Dimensión Ambiental</title>
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body>
+<body class="">
   <header role="banner">
+    <button type="button" id="btn-menu" class="btn-menu">
+        Menu
+      </button>
+
     <h1 class="main-title">Dimensión ambiental</h1>
-    <nav role="navigation" class="main-nav">
-      <button id="btn-menu" class="btn-menu menu-opened"></button>
-      <ul id="cont-menu" class="main-nav__cont responsive">
+
+    <nav role="navigation" class="main-nav js-main-nav">
+      <ul id="cont-menu" class="main-nav__cont">
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Inicio</a>
           <ul class="sub-nav">
@@ -58,8 +62,8 @@
           </ul>
         </li>
           <li class="main-nav__item main-nav__item--cta">
-            <a class="main-nav__link main-nav__link--vol" href="#">Voluntariado</a>
-            <a class="main-nav__link main-nav__link--donate" href="#">Donar</a>
+            <a class="btn btn--vol" href="#">Voluntariado</a>
+            <a class="btn btn--donate" href="#">Donar</a>
         </li>
       </ul>
     </nav>

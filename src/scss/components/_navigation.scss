@@ -60,6 +60,12 @@
   position: relative;
   text-align: center;
 
+  &:hover {
+    .sub-nav {
+      display: block;
+    }
+  }
+
   @media (min-width: $breakpoint-md) {
     align-self: baseline;
     display: flex;
@@ -82,18 +88,25 @@
 }
 
 .sub-nav {
-  background-color: $green-light;
-  position: absolute;
-  margin-top: 1.5rem;
+  background-color: #81AF75;
+  display: none;
+  left: -16px;
+  margin-top: 3rem;
   padding: 0;
+  position: absolute;
 }
 
 .sub-nav__item {
   list-style: none;
   padding: 0.5rem 1rem;
+  
+  &:hover {
+    background: #25252552;
+  }
 }
 
 .sub-nav__link {
   color: white;
   text-decoration: none;
 }
+

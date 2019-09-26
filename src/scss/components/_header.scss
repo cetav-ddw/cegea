@@ -2,19 +2,13 @@ header {
   align-items: baseline;
   background-color: $green-light;
   display: flex;
-  justify-content: space-between;
-  padding: 4rem 1.8rem 1rem 3rem;
-
-
   flex-wrap: no-wrap;
+  justify-content: space-between;
   padding: 3rem 1rem 1.5rem;
+
   .btn, .main-title, .btn-menu {
     width: auto;
     padding: 1rem;
-  }
-
-  .btn {
-    width: 150px;
   }
 
   .main-nav {

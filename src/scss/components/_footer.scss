@@ -1,0 +1,106 @@
+footer {
+  background-color: $green-light;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+  @media (min-width: 720px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3% 6%;
+  }
+}
+
+.allies__icon {
+  margin-top: 35px;
+  width: 200px;
+}
+
+.contact__item {
+  font-family: $font-default;
+  font-size: 1.125rem;
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.contact__title, .social__title {
+  font-family: $font-titles;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 3%;
+}
+
+.icon__item {
+  font-size: 1.5em;
+  padding-right: 15px;
+  @media (min-width: 960px) {
+    align-items: flex-start;
+    font-size: 2rem;
+  }
+}
+
+.email__a {
+  color: white;
+  @media (min-width: 450px) {
+    margin-left: 0;
+  }
+}
+
+.email__icon {
+  position: relative;
+}
+
+.email__icon::before {
+  content: "";
+  background-image: url(../../images/icons/footer/email.png);
+  display: inline-block;
+  height: 32px;
+  margin-right: 15px;
+  position: relative;
+  top: 10px;
+  width: 32px;
+}
+
+.email__item {
+  position: relative;
+}
+
+.social__icon {
+  position: relative;
+}
+
+.social__icon::before {
+  content: "";
+  background-image: url(../../images/icons/footer/facebook.png);
+  display: inline-block;
+  height: 48px;
+  position: relative;
+  width: 48px;
+}
+
+.social__link {
+  margin-top: 3%;
+}
+
+.social-media {
+  margin-top: 15px;
+  @media (min-width: 720px) {
+    margin: 0;
+  }
+}
+
+.telephone__icon {
+  position: relative;
+}
+
+.telephone__icon::before {
+  background-image: url(../../images/icons/footer/telephone.png);
+  content: "";
+  display: inline-block;
+  height: 32px;
+  margin-right: 15px;
+  position: relative;
+  top: 10px;
+  width: 32px;
+}

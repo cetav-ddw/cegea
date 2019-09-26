@@ -1,4 +1,4 @@
-(function () {
+(function menu() {
   const btnMenu = document.getElementById('btn-menu');
 
   function toggleMenu() {
@@ -8,4 +8,4 @@
   }
 
   btnMenu.addEventListener('click', toggleMenu);
-})();
+}());

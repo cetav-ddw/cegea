@@ -16,7 +16,7 @@ body {
     .btn--donate {
       margin: 10px; } }
 
-.btn--vol {
+.btn--volunteer {
   background-color: #d4ab20; }
 
 header {
@@ -86,6 +86,10 @@ header {
     .btn-menu {
       display: none; } }
 
+@media (max-width: 768px) {
+  li.menu-open > ul {
+    display: block; } }
+
 .main-nav__cont {
   display: none;
   margin: 0;
@@ -102,41 +106,50 @@ header {
 .main-nav__item {
   list-style: none;
   margin: 1.5rem;
-  padding: 1.2rem 1rem;
+  padding: 0.2rem 0 0;
   position: relative;
   text-align: center; }
+  .main-nav__item:hover {
+    background-color: #73A068; }
+    @media (max-width: 768px) {
+      .main-nav__item:hover .sub-nav {
+        background-color: #5f9750; } }
   @media (min-width: 768px) {
     .main-nav__item {
       align-self: baseline;
       display: flex;
       margin: 0 0.3rem;
-      padding: 1.2rem 1rem 0; }
+      padding: 1.2rem 1rem 1rem; }
       .main-nav__item:hover .sub-nav {
         display: block; } }
   @media (min-width: 1080px) {
     .main-nav__item {
-      padding: 1.8rem 0;
       margin: 0 0.8rem; } }
   @media (min-width: 1320px) {
     .main-nav__item {
-      padding: 2rem 0;
       margin: 0 1rem; } }
+
+@media (max-width: 768px) {
+  .main-nav__item--space-top {
+    padding: 1rem 0; } }
 
 .main-nav__link {
   color: white;
+  font-weight: bolder;
   text-decoration: none; }
+  @media (max-width: 768px) {
+    .main-nav__link:hover {
+      display: block; } }
 
 .sub-nav {
-  background-color: #81AF75;
-  display: none;
-  left: -16px;
-  margin-top: 3rem;
+  left: 0px;
+  margin-top: 2rem;
   padding: 0; }
   @media (min-width: 768px) {
     .sub-nav {
-      position: absolute; }
-      .menu-open .sub-nav {
-        display: block; } }
+      background-color: #81AF75;
+      display: none;
+      position: absolute; } }
   @media (max-width: 1080px) {
     .sub-nav {
       margin-top: 1.4rem; } }
@@ -145,12 +158,15 @@ header {
   list-style: none;
   padding: 0.5rem 1rem; }
   .sub-nav__item:hover {
-    background: #25252552; }
+    background-color: #73A068; }
+  @media (min-width: 768px) {
+    .sub-nav__item:hover {
+      background: #25252521; } }
 
 .sub-nav__link {
   color: white;
+  font-size: 14px;
   text-decoration: none; }
-
-@media (max-width: 768px) {
-  li.menu-open > ul {
-    display: block; } }
+  @media (min-width: 768px) {
+    .sub-nav__link {
+      font-size: 1rem; } }

@@ -28,6 +28,13 @@
   }
 }
 
+li.menu-open > ul {
+
+  @media (max-width: $breakpoint-md)  {
+    display: block;
+  }
+}
+
 .main-nav__cont {
   display: none;
   margin: 0;
@@ -48,11 +55,20 @@
 .main-nav__item {
   list-style: none;
   margin: 1.5rem;
-  padding: 1.2rem 1rem;
+  padding: 0.2rem 0 0;
   position: relative;
   text-align: center;
 
+  &:hover {
+    background-color: #73A068;
+    @media (max-width: $breakpoint-md) {
+      .sub-nav {
+        background-color: $green-light;
+      }
+    }
+  }
   @media (min-width: $breakpoint-md) {
+
     &:hover {
       .sub-nav {
         display: block;
@@ -61,37 +77,44 @@
     align-self: baseline;
     display: flex;
     margin: 0 0.3rem;
-    padding: 1.2rem 1rem 0;
+    padding: 1.2rem 1rem 1rem;
   }
   @media (min-width: $breakpoint-lg) {
-    padding: 1.8rem 0;
     margin: 0 0.8rem;
   }
   @media (min-width: $breakpoint-xl) {
-    padding: 2rem 0;
     margin: 0 1rem;
+  }
+}
+
+.main-nav__item--space-top {
+  
+  @media (max-width: $breakpoint-md) {
+    padding: 1rem 0;
   }
 }
 
 .main-nav__link {
   color: white;
+  font-weight: bolder;
   text-decoration: none;
+
+  @media (max-width: $breakpoint-md) {
+    &:hover {
+      display: block;
+    }
+  }
 }
 
 .sub-nav {
-  background-color: #81AF75;
-  display: none;
-  left: -16px;
-  margin-top: 3rem;
+  left: 0px;
+  margin-top: 2rem;
   padding: 0;
 
-
   @media (min-width: $breakpoint-md)  {
+    background-color: #81AF75;
+    display: none;
     position: absolute;
-    
-    .menu-open & {
-      display: block; 
-    }
   }
 
   @media (max-width: $breakpoint-lg)  {
@@ -104,18 +127,22 @@
   padding: 0.5rem 1rem;
   
   &:hover {
-    background: #25252552;
+    background-color: #73A068;
+  }
+
+  @media (min-width: $breakpoint-md)  {
+    &:hover {
+      background: #25252521;
+    }
   }
 }
 
 .sub-nav__link {
   color: white;
+  font-size: 14px;
   text-decoration: none;
-}
 
-li.menu-open > ul {
-
-  @media (max-width: $breakpoint-md)  {
-    display: block;
+  @media (min-width: $breakpoint-md)  {
+    font-size: $text-size;
   }
 }

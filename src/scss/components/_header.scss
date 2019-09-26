@@ -3,10 +3,45 @@ header {
   background-color: $green-light;
   display: flex;
   justify-content: space-between;
-  padding: 3rem 1rem 1.5rem;
+  padding: 4rem 1.8rem 1rem 3rem;
 
-  @media (min-width: $breakpoint-md) {
-    padding: 4rem 1.8rem 1rem 3rem;
+
+  flex-wrap: no-wrap;
+  padding: 3rem 1rem 1.5rem;
+  .btn, .main-title, .btn-menu {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .btn {
+    width: 150px;
+  }
+
+  .main-nav {
+    width: auto;
+  }
+
+  @media (max-width: $breakpoint-lg)  {
+    .btn {
+      width: 48%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+
+    flex-wrap: wrap;
+    padding: 0;
+    .btn, .main-title, .btn-menu {
+      width: 50%;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .main-nav {
+      width: 100%;
+    }
   }
 }
 
@@ -15,8 +50,12 @@ header {
   font-family: $font-titles;
   font-size: 1.6rem;
   margin: 0;
+  margin-right: auto;
 
   @media (min-width: $breakpoint-md) {
     font-size: $h1-size;
+  }
+  @media (min-width: $breakpoint-lg)  {
+    margin-right: 0;
   }
 }

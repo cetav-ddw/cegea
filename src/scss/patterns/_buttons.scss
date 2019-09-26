@@ -1,22 +1,19 @@
 .btn {
-    text-align: center;
-    color: $white;
-    padding: 1.5rem;
-    text-decoration: none;
-    width: 150px;
+  text-align: center;
+  color: $white;
+  padding: 1.5rem;
+  text-decoration: none;
+  width: 150px;
 }
 
 .btn--donate {
-    background-color: $orange;
+  background-color: $orange;
 
-    @media (min-width: $breakpoint-md) {
-        margin-left: 15px;
-    }
-    @media (min-width: $breakpoint-lg) {
-        margin: 10px;
-    }
+  @media (min-width: $breakpoint-lg) {
+    margin: 10px;
+  }
 }
 
 .btn--vol {
-    background-color: $yellow;
+  background-color: $yellow;
 }

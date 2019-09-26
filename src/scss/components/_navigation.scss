@@ -1,21 +1,12 @@
-.cont-btn {
-  display: block;
-  float: right;
-  height: 23px;
-  margin-top: 1rem;
-  width: 23px;
-
-  @media (min-width: $breakpoint-md) {
-    display: none;
-  }
-}
-
 .btn-menu {
   background-color: transparent;
   border: 0;
-  color: $white;
-  font-size: $text-size;
+  color: #ffffff;
+  font-size: 1rem;
   font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
   
 
   &:before {
@@ -43,13 +34,15 @@
   margin: 0;
   padding: 0;
 
-  .menu-open & {
-    display: block;
+  @media (max-width: $breakpoint-md + 1) {
+    .menu-open & {
+      display: block;
+    }
   }
-  
   @media (min-width: $breakpoint-md) {
     display: flex;
     justify-content: space-evenly;
+    padding-bottom: 1rem;
   }
 }
 
@@ -60,13 +53,12 @@
   position: relative;
   text-align: center;
 
-  &:hover {
-    .sub-nav {
-      display: block;
-    }
-  }
-
   @media (min-width: $breakpoint-md) {
+    &:hover {
+      .sub-nav {
+        display: block;
+      }   
+    }
     align-self: baseline;
     display: flex;
     margin: 0 0.3rem;
@@ -94,6 +86,17 @@
   margin-top: 3rem;
   padding: 0;
   position: absolute;
+
+
+  @media (min-width: $breakpoint-md)  {
+    .menu-open & {
+      display: block; 
+    }
+  }
+
+  @media (max-width: $breakpoint-lg)  {
+    margin-top: 1.4rem;
+  }
 }
 
 .sub-nav__item {

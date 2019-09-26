@@ -1,6 +1,6 @@
 (function menu() {
   const btnMenu = document.getElementById('btn-menu');
-  const subMenu = document.getElementById('js-sub-menu');
+  const subMenu = document.getElementById('cont-sub-menu');
 
   function toggleMenu() {
     const body = document.getElementsByTagName('body')[0];
@@ -9,7 +9,7 @@
   }
 
   function toggleSubMenu() {
-    const container = document.getElementById('cont-sub-menu')[0];
+    const container = document.getElementById('cont-sub-menu');
 
     container.classList.toggle('menu-open');
   }

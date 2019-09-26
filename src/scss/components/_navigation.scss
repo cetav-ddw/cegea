@@ -1,13 +1,12 @@
 .btn-menu {
+  align-items: flex-end;
   background-color: transparent;
   border: 0;
   color: #ffffff;
-  font-size: 1rem;
-  font-weight: bold;
   display: flex;
-  align-items: flex-end;
+  font-size: 1rem;
   flex-direction: column;
-  
+  font-weight: bold;
 
   &:before {
     background: transparent url("../images/icons/menu/menu.svg") no-repeat;
@@ -85,10 +84,11 @@
   left: -16px;
   margin-top: 3rem;
   padding: 0;
-  position: absolute;
 
 
   @media (min-width: $breakpoint-md)  {
+    position: absolute;
+    
     .menu-open & {
       display: block; 
     }
@@ -113,3 +113,9 @@
   text-decoration: none;
 }
 
+li.menu-open > ul {
+
+  @media (max-width: $breakpoint-md)  {
+    display: block;
+  }
+}

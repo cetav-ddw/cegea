@@ -6,7 +6,9 @@ header {
   justify-content: space-between;
   padding: 3rem 1rem 1.5rem;
 
-  .btn, .main-title, .btn-menu {
+  .btn,
+  .main-title,
+  .btn-menu {
     width: auto;
     padding: 1rem;
   }
@@ -17,20 +19,22 @@ header {
 
   @media (max-width: $breakpoint-lg)  {
     .btn {
-      width: 48%;
-      padding: 1rem;
       box-sizing: border-box;
+      padding: 1rem;
+      width: 48%;
     }
   }
 
   @media (max-width: $breakpoint-md) {
-
     flex-wrap: wrap;
     padding: 0;
-    .btn, .main-title, .btn-menu {
-      width: 50%;
-      padding: 1rem;
+    
+    .btn,
+    .main-title,
+    .btn-menu {
       box-sizing: border-box;
+      padding: 1rem;
+      width: 50%;
     }
 
     .main-nav {

@@ -2,44 +2,13 @@ header {
   align-items: baseline;
   background-color: $green-light;
   display: flex;
-  flex-wrap: no-wrap;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 3rem 1rem 1.5rem;
+  padding: 0;
 
-  .btn,
-  .main-title,
-  .btn-menu {
-    width: auto;
-    padding: 1rem;
-  }
-
-  .main-nav {
-    width: auto;
-  }
-
-  @media (max-width: $breakpoint-lg)  {
-    .btn {
-      box-sizing: border-box;
-      padding: 1rem;
-      width: 48%;
-    }
-  }
-
-  @media (max-width: $breakpoint-md) {
-    flex-wrap: wrap;
-    padding: 0;
-    
-    .btn,
-    .main-title,
-    .btn-menu {
-      box-sizing: border-box;
-      padding: 1rem;
-      width: 50%;
-    }
-
-    .main-nav {
-      width: 100%;
-    }
+  @media (min-width: $breakpoint-md) {
+    flex-wrap: unset;
+    padding: 3rem 1rem 1.5rem;
   }
 }
 
@@ -49,9 +18,12 @@ header {
   font-size: 1.6rem;
   margin: 0;
   margin-right: auto;
+  padding: 1rem;
+  width: 50%;
 
   @media (min-width: $breakpoint-md) {
     font-size: $h1-size;
+    width: auto;
   }
   @media (min-width: $breakpoint-lg)  {
     margin-right: 0;

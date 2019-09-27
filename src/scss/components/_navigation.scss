@@ -1,4 +1,14 @@
 .btn-menu {
+  &:before {
+    background: transparent url("../images/icons/menu/menu.svg") no-repeat;
+    background-size: cover;
+    content: '';
+    display: block;
+    position: absolute;
+    right: 60px;
+    height: 15px;
+    width: 15px;
+  }
   align-items: flex-end;
   background-color: transparent;
   border: 0;
@@ -8,30 +18,75 @@
   flex-direction: column;
   font-weight: bold;
 
-  &:before {
-    background: transparent url("../images/icons/menu/menu.svg") no-repeat;
-    background-size: cover;
-    content: '';
-    display: block;
-    height: 22px;
-    width: 22px;
-  }
-
   .menu-open & {
     &:before {
       background-image: url("../images/icons/menu/menu-closed.svg");
     }
   }
-
+  
   @media (min-width: $breakpoint-md) {
     display: none;
   }
+
 }
 
-li.menu-open > ul {
+.btn-nav__cont {
+  display: flex;
+  margin: 0;
+  padding: 0;
 
-  @media (max-width: $breakpoint-md)  {
-    display: block;
+  @media (min-width: 0) and (max-width:768px) {
+    width: 100%;
+  }
+  @media (min-width: $breakpoint-md) {
+    justify-content: space-evenly;
+    padding-bottom: 1rem;
+  }
+}
+
+.btn-nav__item {
+  &:hover {
+    background-color: #73A068;
+    @media (min-width: 0) and (max-width:768px) {
+      .sub-nav {
+        background-color: $green-light;
+      }
+    }
+  }
+  list-style: none;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: 0) and (max-width:768px) {
+    width: 50%;
+  }
+  @media (min-width: $breakpoint-md) {
+
+    &:hover {
+      .sub-nav {
+        display: block;
+      }   
+    }
+    align-self: end;
+    display: flex;
+    margin: 0 0.3rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    margin: 0 0.8rem;
+  }
+  @media (min-width: $breakpoint-xl) {
+    margin: 0 1rem;
+  }
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    width: auto;
+    flex-wrap: nowrap;
   }
 }
 
@@ -40,9 +95,10 @@ li.menu-open > ul {
   margin: 0;
   padding: 0;
 
-  @media (max-width: $breakpoint-md + 1) {
+  @media (min-width: 0) and (max-width:768px) {
     .menu-open & {
       display: block;
+      width: 100%;
     }
   }
   @media (min-width: $breakpoint-md) {
@@ -53,22 +109,22 @@ li.menu-open > ul {
 }
 
 .main-nav__item {
+  &:hover {
+    background-color: #73A068;
+
+    @media (min-width: 0) and (max-width:768px) {
+      .sub-nav {
+        background-color: $green-light;
+      }
+    }
+  }
   list-style: none;
   margin: 1.5rem;
   padding: 0.2rem 0 0;
   position: relative;
   text-align: center;
 
-  &:hover {
-    background-color: #73A068;
-    @media (max-width: $breakpoint-md) {
-      .sub-nav {
-        background-color: $green-light;
-      }
-    }
-  }
   @media (min-width: $breakpoint-md) {
-
     &:hover {
       .sub-nav {
         display: block;
@@ -88,51 +144,41 @@ li.menu-open > ul {
 }
 
 .main-nav__item--space-top {
-  
-  @media (max-width: $breakpoint-md) {
-    padding: 1rem 0;
-  }
+  padding: 1rem 0;
 }
 
 .main-nav__link {
+  &:hover {
+    display: block;
+  }
   color: white;
   font-weight: bolder;
   text-decoration: none;
-
-  @media (max-width: $breakpoint-md) {
-    &:hover {
-      display: block;
-    }
-  }
 }
 
 .sub-nav {
   left: 0px;
-  margin-top: 2rem;
+  margin-top: 1.4rem;
   padding: 0;
 
   @media (min-width: $breakpoint-md)  {
     background-color: #81AF75;
     display: none;
+    margin-top: 2rem;
     position: absolute;
-  }
-
-  @media (max-width: $breakpoint-lg)  {
-    margin-top: 1.4rem;
   }
 }
 
 .sub-nav__item {
-  list-style: none;
-  padding: 0.5rem 1rem;
-  
   &:hover {
     background-color: #73A068;
   }
+  list-style: none;
+  padding: 0.5rem 1rem;
 
   @media (min-width: $breakpoint-md)  {
     &:hover {
-      background: #25252521;
+      background: rgba(37, 37, 37, 0.129);
     }
   }
 }

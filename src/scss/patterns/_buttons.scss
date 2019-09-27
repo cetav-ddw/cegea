@@ -1,19 +1,35 @@
 .btn {
   color: $white;
-  padding: 1.5rem;
   text-align: center;
   text-decoration: none;
-  width: 150px;
+  font-weight: bold;
 }
 
 .btn--donate {
+  &:hover {
+    background-color: #C65300; 
+  }
   background-color: $orange;
+  display: block;
+  padding: 1rem;
+  width: 100%;
 
-  @media (min-width: $breakpoint-lg) {
-    margin: 10px;
+
+  @media (min-width: $breakpoint-md) {
+    width: 150px;
   }
 }
 
 .btn--volunteer {
+  &:hover {
+    background-color: #C19500;
+  }
   background-color: $yellow;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    width: 150px;
+  }
 }

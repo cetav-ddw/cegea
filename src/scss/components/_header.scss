@@ -1,5 +1,5 @@
 header {
-  align-items: baseline;
+  align-items: center;
   background-color: $green-light;
   display: flex;
   flex-wrap: wrap;
@@ -8,24 +8,40 @@ header {
 
   @media (min-width: $breakpoint-md) {
     flex-wrap: unset;
-    padding: 3rem 1rem 1.5rem;
+    padding: 1.5rem 0;
+  }
+  @media (min-width: $breakpoint-lg) {
+    flex-wrap: unset;
+    padding: 1.5rem 1rem;
   }
 }
 
 .main-title {
+  &::after {
+    background: transparent url("../../images/logo/2x/LOGO\(2X\).png") no-repeat;
+    background-size: cover;
+    content: '';
+    display: block;
+    height: 61px;
+    width: 191px;
+  }
+  align-self: center;
   color: white;
   font-family: $font-titles;
   font-size: 1.6rem;
   margin: 0;
-  margin-right: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 50%;
 
   @media (min-width: $breakpoint-md) {
+    &::after {
+      background-image: url("../../images/logo/1x/LOGO\(1X\).png");
+    }  
     font-size: $h1-size;
     width: auto;
   }
   @media (min-width: $breakpoint-lg)  {
     margin-right: 0;
+    margin-left: 20px;
   }
 }

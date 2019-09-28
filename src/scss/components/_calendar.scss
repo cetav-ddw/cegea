@@ -1,0 +1,187 @@
+.agenda {
+  background: $green-transoarent;
+  opacity: 1.1;
+  padding: 40px;
+  margin: 10%;
+
+  @media (min-width: $breakpoint-md) {
+    margin: 18%;   
+    position: relative;
+    top: -84px;    
+  }
+  @media (min-width: 680px) {
+    margin: 19%;
+    padding: 44px;
+  }
+  @media (min-width: 800px) {
+    margin: 26%;  
+    padding: 52px;
+    position: relative;
+    top: -159px;
+  } 
+  @media (min-width: $breakpoint-lg) {
+    display: none;   
+  }
+}
+
+.agenda__content {
+  @media (min-width: $breakpoint-lg) {
+    margin-top: 17px;
+  }
+}
+
+.agenda-first_title {
+  font-weight: lighter;   
+}
+.agenda-first__title, 
+.agenda-second__title {
+  color: $orange;
+  display: flex;
+  justify-content: center;
+}
+
+.first__title--styles {
+  font-family: $font-default;
+  position: relative;
+  top: 6px;
+}
+
+.hero__title--position {
+  @media (min-width: $breakpoint-lg) { 
+    display: block;
+    color: white;   
+  }   
+}
+
+.second__title--font {
+  font-family: $font-titles;
+
+  @media (min-width: $breakpoint-lg) {     
+    color: white;   
+  }
+}
+
+.agenda__heroimage {
+  display: none;
+  &::after{
+    background-color: #d4aa15;
+    bottom: -17px;
+    content: "";
+    display: block;
+    height: 107%;
+    position: absolute;
+    right: 111%;
+    width: 6px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    background: rgba(86, 146, 70, 0.849);
+    display: block;
+    float: right;
+    height: 417.23px;
+    left: -44px;
+    padding: 43px;
+    position: relative;
+    top: 172px;
+    width: 254.24px;
+  }    
+}
+
+.activity__info {
+  position: relative;
+  top: -26px;
+}
+.agenda__buttons--styles {
+  background: $yellow;
+  border-radius: 6px;
+  color: white;
+  font-family:$font-default;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px;
+  text-decoration: none;
+  margin-left: 69px;
+}
+
+.agenda__item-title {
+  color: white;
+  left: 161px;
+  position: absolute;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 17px;
+    left: 124px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: 17px;
+    left: 108px;
+  }
+}
+
+.agenda__month,
+.agenda__day {
+  background: white;
+  font-family: $font-titles;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+}
+
+.agenda__day {
+  background: #4A4A4A;
+  color: white;
+  font-size: 23px;
+  height: 32px;
+}
+
+.date__activity {
+  position: relative;
+  top: -5px;
+}
+
+.event__date {
+  border:2px solid #828282;
+  display: block;
+  width: 56px;
+}
+
+.hero_image {
+  background-image: url('../../images/heroimage/laguna2x.jpg');
+  background-size: cover;
+  height: 42vh;
+  width: 100%;
+
+  @media (min-width: 560px) {  
+    height: 67vh;     
+  }
+  @media (min-width: $breakpoint-md) {
+    height: 90vh;    
+  }  
+  @media (min-width: $breakpoint-lg) {
+    height: 113vh;
+  }
+  @media (min-width: $breakpoint-xl) {
+    height: 134vh;   
+  }
+}
+
+li {
+  list-style: none;
+}
+
+.main__title {
+  position: relative;
+  top: 37px;
+}
+
+.more__activities {
+  bottom: -13px;
+  position: relative;
+  right: 66px;
+}
+
+.more__activities--mgtop {
+  margin-top: 20px;
+}

@@ -1,4 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: $font-default;
-  margin: 0;
+}
+
+h1,
+h3 {
+  font-family: $font-titles ;
+}
+
+p,span {
+  font-family: $font-default;
 }

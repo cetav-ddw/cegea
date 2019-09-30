@@ -1,7 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin+Dark|Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  font-family: "Quicksand", Arial, Verdana, sans-serif;
-  margin: 0; }
+  font-family: "Quicksand", Arial, Verdana, sans-serif; }
+
+h1,
+h3 {
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
+
+p, span {
+  font-family: "Quicksand", Arial, Verdana, sans-serif; }
 
 header {
   background-color: #5f9750;
@@ -43,6 +53,8 @@ header {
     display: block;
     height: 22px;
     width: 22px; }
+  .menu-open .btn-menu:before {
+    background-image: url("../images/icons/menu/menu-closed.svg"); }
   @media (min-width: 768px) {
     .btn-menu {
       display: none; } }
@@ -73,7 +85,7 @@ header {
     .main-nav__item {
       padding: 1.8rem 0;
       margin: 0 0.8rem; } }
-  @media (min-width: 1320px) {
+  @media (min-width: 1440px) {
     .main-nav__item {
       padding: 2rem 0;
       margin: 0 1rem; } }
@@ -89,6 +101,3 @@ header {
 .main-nav__link {
   color: white;
   text-decoration: none; }
-
-.menu-closed {
-  background-image: url("../images/icons/menu/menu-closed.svg"); }

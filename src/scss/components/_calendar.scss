@@ -1,5 +1,5 @@
 .agenda {
-  background: $green-transoarent;
+  background: rgba(129, 175, 117, 0.76);
   opacity: 1.1;
   padding: 40px;
   margin: 10%;
@@ -38,6 +38,10 @@
   color: $orange;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $breakpoint-lg) {
+    display: none;   
+  }
 }
 
 .first__title--styles {
@@ -49,7 +53,7 @@
 .hero__title--position {
   @media (min-width: $breakpoint-lg) { 
     display: block;
-    color: white;   
+    color: $white;   
   }   
 }
 
@@ -57,7 +61,7 @@
   font-family: $font-titles;
 
   @media (min-width: $breakpoint-lg) {     
-    color: white;   
+    color: $white;   
   }
 }
 
@@ -75,7 +79,7 @@
   }
 
   @media (min-width: $breakpoint-lg) {
-    background: rgba(86, 146, 70, 0.849);
+    background: rgba(86, 146, 70, 0.88);
     display: block;
     float: right;
     height: 417.23px;
@@ -94,7 +98,7 @@
 .agenda__buttons--styles {
   background: $yellow;
   border-radius: 6px;
-  color: white;
+  color: $white;
   font-family:$font-default;
   font-size: 14px;
   font-weight: bold;
@@ -104,7 +108,7 @@
 }
 
 .agenda__item-title {
-  color: white;
+  color: $white;
   left: 161px;
   position: absolute;
 
@@ -120,7 +124,7 @@
 
 .agenda__month,
 .agenda__day {
-  background: white;
+  background: $white;
   font-family: $font-titles;
   font-size: 18px;
   font-weight: bold;
@@ -131,7 +135,7 @@
 
 .agenda__day {
   background: #4A4A4A;
-  color: white;
+  color: $white;
   font-size: 23px;
   height: 32px;
 }

@@ -1,0 +1,13 @@
+.brand {
+  background: transparent url("../../images/logo/logo.png") no-repeat;
+  background-size: contain;
+  content: '';
+  display: block;
+  height: 61px;
+  margin: 0;
+  width: 191px;
+
+  @media (min-width: $breakpoint-md) {
+    background-image: url("../../images/logo/logo2x.png");
+  }
+}

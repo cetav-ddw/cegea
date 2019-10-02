@@ -1,0 +1,66 @@
+.projects {
+    // wapper de projects
+
+}
+
+.projects__cont {
+    // ul de los projects
+    margin: 0;
+    padding: 0;
+}
+
+.projects__item {
+    // li de cada project
+    border-radius: 25%;
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 25px;
+}
+
+.projects__item--reforest {
+    background: rgba(23, 23, 23, 0.300) url('../../images/projects/reforestacion.jpg');
+}
+
+.projects__item--wildlife {
+    background: rgba(23, 23, 23, 0.300) url('../../images/projects/avifauna.jpg');
+}
+
+.projects__item--gardens {
+    background: rgba(23, 23, 23, 0.300) url('../../images/projects//jardin-botanico.jpg');
+}
+
+.projects__item--conservation {
+    background: rgba(23, 23, 23, 0.300) url('../../images/projects/conservacion-jardines.jpg');
+}
+
+.projects__item--education {
+    background: rgba(23, 23, 23, 0.800) url('../../images/projects/educacion.jpg');
+}
+
+.projects__link {
+    // a de cada project
+    background-size: cover;
+    border-radius: 50%;
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+.projects__title {
+    // titulo de projects
+}
+
+.projects__title-item {
+    // titulo de cada project
+    color: #000;
+    margin: 0;
+    text-align: center;
+    position: absolute;
+    
+    @media (min-width: $breakpoint-md) {
+        color: $white;
+    }
+}

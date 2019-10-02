@@ -43,6 +43,8 @@ header {
     display: block;
     height: 22px;
     width: 22px; }
+  .menu-open .btn-menu:before {
+    background-image: url("../images/icons/menu/menu-closed.svg"); }
   @media (min-width: 768px) {
     .btn-menu {
       display: none; } }
@@ -90,5 +92,45 @@ header {
   color: white;
   text-decoration: none; }
 
-.menu-closed {
-  background-image: url("../images/icons/menu/menu-closed.svg"); }
+.projects__cont {
+  margin: 0;
+  padding: 0; }
+
+.projects__item {
+  border-radius: 25%;
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 25px; }
+
+.projects__item--reforest {
+  background: rgba(23, 23, 23, 0.3) url("../../images/projects/reforestacion.jpg"); }
+
+.projects__item--wildlife {
+  background: rgba(23, 23, 23, 0.3) url("../../images/projects/avifauna.jpg"); }
+
+.projects__item--gardens {
+  background: rgba(23, 23, 23, 0.3) url("../../images/projects//jardin-botanico.jpg"); }
+
+.projects__item--conservation {
+  background: rgba(23, 23, 23, 0.3) url("../../images/projects/conservacion-jardines.jpg"); }
+
+.projects__item--education {
+  background: rgba(23, 23, 23, 0.8) url("../../images/projects/educacion.jpg"); }
+
+.projects__link {
+  background-size: cover;
+  border-radius: 50%;
+  display: block;
+  height: 100%;
+  text-decoration: none;
+  width: 100%; }
+
+.projects__title-item {
+  color: #000;
+  margin: 0;
+  text-align: center;
+  position: absolute; }
+  @media (min-width: 768px) {
+    .projects__title-item {
+      color: #ffffff; } }

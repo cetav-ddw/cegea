@@ -11,32 +11,33 @@ header {
     padding: 1.5rem 0;
   }
   @media (min-width: $breakpoint-lg) {
-    flex-wrap: unset;
-    padding: 1.5rem 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 .main-title {
-  &::after {
-    background: transparent url("../../images/logo/2x/LOGO\(2X\).png") no-repeat;
-    background-size: cover;
-    content: '';
-    display: block;
-    height: 61px;
-    width: 191px;
-  }
   align-self: center;
-  color: white;
+  color: $white;
   font-family: $font-titles;
   font-size: 1.6rem;
   margin: 0;
   padding: 0.5rem;
   width: 50%;
 
+  &::after {
+    background: transparent url("../../images/logo/logo.png") no-repeat;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 61px;
+    width: 191px;
+
+    @media (min-width: $breakpoint-md) {
+      background-image: url("../../images/logo/logo2x.png");
+    }
+  }
   @media (min-width: $breakpoint-md) {
-    &::after {
-      background-image: url("../../images/logo/1x/LOGO\(1X\).png");
-    }  
     font-size: $h1-size;
     width: auto;
   }

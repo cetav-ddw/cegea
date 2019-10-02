@@ -1,19 +1,48 @@
 header {
+  align-items: center;
   background-color: $green-light;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 3rem 1rem 2rem;
+  padding: 0;
 
   @media (min-width: $breakpoint-md) {
-    padding: 4rem 1.8rem 3rem 3rem;
+    flex-wrap: unset;
+    padding: 1.5rem 0;
+  }
+  @media (min-width: $breakpoint-lg) {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
 .main-title {
-  color: white;
+  align-self: center;
+  color: $white;
   font-family: $font-titles;
   font-size: 1.6rem;
+  margin: 0;
+  padding: 0.5rem;
+  width: 50%;
+
+  &::after {
+    background: transparent url("../../images/logo/logo.png") no-repeat;
+    background-size: contain;
+    content: '';
+    display: block;
+    height: 61px;
+    width: 191px;
+
+    @media (min-width: $breakpoint-md) {
+      background-image: url("../../images/logo/logo2x.png");
+    }
+  }
   @media (min-width: $breakpoint-md) {
     font-size: $h1-size;
+    width: auto;
+  }
+  @media (min-width: $breakpoint-lg)  {
+    margin-right: 0;
+    margin-left: 20px;
   }
 }

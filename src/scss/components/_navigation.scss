@@ -1,40 +1,90 @@
-.cont-btn {
-  display: block;
-  float: right;
-  height: 23px;
-  margin-top: 1rem;
-  width: 23px;
-
-  @media (min-width: $breakpoint-md) {
-    display: none;
-  }
-}
-
 .btn-menu {
+  align-items: flex-end;
+  align-self: center;
   background-color: transparent;
   border: 0;
-  color: $white;
-  font-size: $text-size;
+  color: #ffffff;
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
   font-weight: bold;
-  
+  padding: 1rem 1rem 1rem 0.5rem;
 
   &:before {
     background: transparent url("../images/icons/menu/menu.svg") no-repeat;
     background-size: cover;
     content: '';
     display: block;
-    height: 22px;
-    width: 22px;
+    position: absolute;
+    right: 65px;
+    height: 15px;
+    width: 15px;
   }
-
   .menu-open & {
     &:before {
       background-image: url("../images/icons/menu/menu-closed.svg");
     }
   }
-
   @media (min-width: $breakpoint-md) {
     display: none;
+  }
+}
+
+.btn-nav__cont {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: auto;
+  }
+  @media (min-width: $breakpoint-md) {
+    justify-content: space-evenly;
+  }
+}
+
+.btn-nav__item {
+  list-style: none;
+  position: relative;
+  text-align: center;
+  width: 50%;
+
+  &:hover {
+    background-color: #73A068;
+    @media (min-width: $breakpoint-md) {
+      .sub-nav {
+        display: block;
+      }
+    }
+  }
+  @media (min-width: $breakpoint-md) {
+    align-self: end;
+    display: flex;
+    margin: 0 0.6rem;
+  }
+  @media (min-width: $breakpoint-lg) {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+  }
+  @media (min-width: $breakpoint-xl) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.main-nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    width: auto;
+    flex-wrap: nowrap;
+    margin-left: 20px;
+  }
+  @media (min-width: $breakpoint-lg)  {
+    margin-right: 20px;
   }
 }
 
@@ -42,11 +92,10 @@
   display: none;
   margin: 0;
   padding: 0;
-
   .menu-open & {
-    display: block;
+      display: block;
+      width: 100%;  
   }
-  
   @media (min-width: $breakpoint-md) {
     display: flex;
     justify-content: space-evenly;
@@ -56,36 +105,86 @@
 .main-nav__item {
   list-style: none;
   margin: 1.5rem;
-  padding: 1.2rem 1rem;
+  padding: 0.2rem 0 0;
+  position: relative;
   text-align: center;
 
+  &:hover {
+    background: rgba(37, 37, 37, 0.129);
+
+    @media (min-width: $breakpoint-md) {
+      .sub-nav {
+        display: block;
+      }
+    }
+  }
   @media (min-width: $breakpoint-md) {
     align-self: baseline;
     display: flex;
     margin: 0 0.3rem;
-    padding: 1.2rem 1rem 0;
+    padding: 1.2rem 1rem 1rem;
   }
   @media (min-width: $breakpoint-lg) {
-    padding: 1.8rem 0;
-    margin: 0 0.8rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
   @media (min-width: $breakpoint-xl) {
-    padding: 2rem 0;
-    margin: 0 1rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
-}
-
-.main-nav__link--donate {
-  background-color: $orange;
-  padding: 1.5rem;
-}
-
-.main-nav__link--vol {
-  background-color: $yellow;
-  padding: 1.5rem;
 }
 
 .main-nav__link {
-  color: white;
+  color: $white;
+  font-weight: bolder;
   text-decoration: none;
+
+  &:hover {
+    display: block;
+  }
+}
+
+.sub-nav {
+  left: 0px;
+  margin-top: 1.4rem;
+  padding: 0;
+
+background: -moz-linear-gradient(top, rgba(5, 4, 5, 0) 0%, rgba(5,4,5,0) 17%, $palegreen 17%, $palegreen 51%, $palegreen 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(5,4,5,0)), color-stop(17%, rgba(5,4,5,0)), color-stop(17%, $palegreen), color-stop(51%, $palegreen), color-stop(100%, $palegreen));
+background: -webkit-linear-gradient(top, rgba(5,4,5,0) 0%, rgba(5,4,5,0) 17%, $palegreen 17%, $palegreen 51%, $palegreen 100%);
+background: -o-linear-gradient(top, rgba(5,4,5,0) 0%, rgba(5,4,5,0) 17%, $palegreen 17%, $palegreen 51%, $palegreen 100%);
+background: -ms-linear-gradient(top, rgba(5,4,5,0) 0%, rgba(5,4,5,0) 17%, $palegreen 17%, $palegreen 51%, $palegreen 100%);
+background: linear-gradient(to bottom, rgba(5,4,5,0) 0%, rgba(5,4,5,0) 17%, $palegreen 17%, $palegreen 51%, $palegreen 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#050405', endColorstr='#e73827', GradientType=0 );
+
+  @media (min-width: $breakpoint-md)  {
+    background-color: $green-light;
+    display: none;
+    margin-top: 2rem;
+    padding-top: 2.6rem;
+    position: absolute;
+  }
+  @media (min-width: $breakpoint-lg)  {
+    padding-top: 2.5rem;
+  }
+}
+
+.sub-nav__item {
+  list-style: none;
+  padding: 0.5rem 1rem;
+  
+  &:hover {
+    background: rgba(37, 37, 37, 0.100);
+  }
+  
+}
+
+.sub-nav__link {
+  color: $white;
+  font-size: 14px;
+  text-decoration: none;
+
+  @media (min-width: $breakpoint-md)  {
+    font-size: $text-size;
+  }
 }

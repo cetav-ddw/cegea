@@ -11,60 +11,43 @@
 
 <body class="">
   <header role="banner">
+    <h1 class="main-title">
+      <span class="sr-only">Dimensión ambiental</span>
+      </h1>
+
     <button type="button" id="btn-menu" class="btn-menu">
         Menu
-      </button>
-
-    <h1 class="main-title">Dimensión ambiental</h1>
+    </button>
 
     <nav role="navigation" class="main-nav js-main-nav">
       <ul id="cont-menu" class="main-nav__cont">
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Inicio</a>
-          <ul class="sub-nav">
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 1</a>
-            </li>
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 2</a>
-            </li>
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 3</a>
-            </li>
-          </ul>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Acerca de nosotros</a>
-          <ul class="sub-nav">
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 4</a>
-            </li>
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 5</a>
-            </li>
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 6</a>
-            </li>
-          </ul>
         </li>
-        <li class="main-nav__item">
+        <li id="cont-sub-menu" class="main-nav__item">
           <a class="main-nav__link" href="#">Programas</a>
-          <ul class="sub-nav">
+          <ul id="sub-menu" class="sub-nav">
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 7</a>
+              <a  class="sub-nav__link"href="#">Gestión ambiental</a>
             </li>
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 8</a>
+              <a  class="sub-nav__link"href="#">PEDS</a>
             </li>
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 9</a>
+              <a  class="sub-nav__link"href="#">PGCS</a>
+            </li>
+            <li class="sub-nav__item">
+              <a  class="sub-nav__link"href="#">Formación técnica</a>
             </li>
           </ul>
         </li>
-          <li class="main-nav__item main-nav__item--cta">
-            <a class="btn btn--vol" href="#">Voluntariado</a>
-            <a class="btn btn--donate" href="#">Donar</a>
-        </li>
+      </ul>
+      <ul class="btn-nav__cont">
+        <li class="btn-nav__item"><a class="btn btn--volunteer" href="#">Voluntariado</a></li>
+        <li class="btn-nav__item"><a class="btn btn--donate" href="#">Donar</a></li>
       </ul>
     </nav>
   </header>
@@ -194,7 +177,6 @@
         <img src="images/icons/footer/mcj-parque.png" alt="Logo del Ministerio de Cultura y Juventud. Logo del Parque La Libertad" class="allies__icon">
     </section>
   </footer>
-
   <script src="js/menu.js"></script>
 </body>
 

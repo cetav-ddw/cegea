@@ -179,7 +179,7 @@ header {
       left: -44px;
       padding: 43px;
       position: relative;
-      top: 172px;
+      top: 60px;
       width: 254.24px; } }
 
 .activity__info {
@@ -238,20 +238,20 @@ header {
 .hero_image {
   background-image: url("../../images/heroimage/laguna2x.jpg");
   background-size: cover;
-  height: 42vh;
+  height: 34vh;
   width: 100%; }
   @media (min-width: 560px) {
     .hero_image {
       height: 67vh; } }
   @media (min-width: 768px) {
     .hero_image {
-      height: 90vh; } }
+      height: 57vh; } }
   @media (min-width: 1024px) {
     .hero_image {
-      height: 113vh; } }
+      height: 90vh; } }
   @media (min-width: 1440px) {
     .hero_image {
-      height: 134vh; } }
+      height: 100vh; } }
 
 li {
   list-style: none; }

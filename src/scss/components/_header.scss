@@ -1,19 +1,17 @@
-header {
+header[role="banner"] {
+  align-items: center;
   background-color: $green-light;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding: 3rem 1rem 2rem;
+  padding: 0;
 
   @media (min-width: $breakpoint-md) {
-    padding: 4rem 1.8rem 3rem 3rem;
+    flex-wrap: unset;
+    padding: 1.5rem 0;
   }
-}
-
-.main-title {
-  color: white;
-  font-family: $font-titles;
-  font-size: 1.6rem;
-  @media (min-width: $breakpoint-md) {
-    font-size: $h1-size;
+  @media (min-width: $breakpoint-lg) {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

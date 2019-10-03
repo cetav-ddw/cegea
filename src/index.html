@@ -11,60 +11,41 @@
 
 <body class="">
   <header role="banner">
-    <button type="button" id="btn-menu" class="btn-menu">
-        Menu
-      </button>
+    <h1 class="brand">
+      <span class="sr-only">Dimensión ambiental - Parque La Libertad</span>
+    </h1>
 
-    <h1 class="main-title">Dimensión ambiental</h1>
+    <button type="button" id="btn-menu" class="btn-menu">Menu</button>
 
     <nav role="navigation" class="main-nav js-main-nav">
       <ul id="cont-menu" class="main-nav__cont">
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Inicio</a>
-          <ul class="sub-nav">
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 1</a>
-            </li>
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 2</a>
-            </li>
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 3</a>
-            </li>
-          </ul>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__link" href="#">Acerca de nosotros</a>
-          <ul class="sub-nav">
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 4</a>
-            </li>
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 5</a>
-            </li>
-            <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 6</a>
-            </li>
-          </ul>
         </li>
-        <li class="main-nav__item">
+        <li id="cont-sub-menu" class="main-nav__item">
           <a class="main-nav__link" href="#">Programas</a>
-          <ul class="sub-nav">
+          <ul id="sub-menu" class="sub-nav">
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 7</a>
+              <a  class="sub-nav__link"href="#">Gestión ambiental</a>
             </li>
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 8</a>
+              <a  class="sub-nav__link"href="#">PEDS</a>
             </li>
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">item 9</a>
+              <a  class="sub-nav__link"href="#">PGCS</a>
+            </li>
+            <li class="sub-nav__item">
+              <a  class="sub-nav__link"href="#">Formación técnica</a>
             </li>
           </ul>
         </li>
-          <li class="main-nav__item main-nav__item--cta">
-            <a class="btn btn--vol" href="#">Voluntariado</a>
-            <a class="btn btn--donate" href="#">Donar</a>
-        </li>
+      </ul>
+      <ul class="btn-nav__cont">
+        <li class="btn-nav__item"><a class="btn btn--volunteer" href="#">Voluntariado</a></li>
+        <li class="btn-nav__item"><a class="btn btn--donate" href="#">Donar</a></li>
       </ul>
     </nav>
   </header>
@@ -173,43 +154,32 @@
     <img class="ens__img" src="" alt="">
   </div>
   </section>
+
   <footer role="contentinfo">
     <section class="contact">
-      <h3 class="contact__title">Contacto</h3>
-      <ul>
-        <li class="contact__mand">
-          <img class="contact__mand-icon" src="" alt="">
-          <p>Encargado de gestión ambiental: Lidia Noches</p>
+      <h3 class="contact__title footer__title">Contacto</h3>
+      <ul class="contact__container">
+        <li class="contact__item email">
+          <span class="email__icon">
+            <a href="mailto:ambiental@parquelalibertad.org" class="email__a">ambiental@parquelalibertad.org</a>
+          </span>
         </li>
-        <li class="contact__mail">
-          <img class="contact__mail-icon" src="" alt="">
-          <p class="contact__mail-text">
-            correo electronico:
-            <a href="mailto:lnoches@parquelalibertad.com">lnoches@parquelalibertad.com</a>
-          </p>
-        </li>
-        <li class="contact__phone">
-          <img class="contact__phone-icon" src="" alt="">
-          <p class="contact__phone-text">Teléfono: 2276-9400 ext:2017</p>
+        <li class="contact__item">
+          <span class="telephone__icon">
+            2276-9400 ext: 2016
+          </span> 
         </li>
       </ul>
     </section>
-    <section>
-      <div class="social">
-        <h3 class="social__title">Síganos en redes sociales</h3>
-        <a class="social__link" href="#">
-          <img class="social__img" src="" alt="" class="network-icon--facebook">
+
+    <section class="social-media">
+      <h3 class="social__title footer__title">Síganos en 
+        <a href="https://www.facebook.com/ejeambientalpll/" class="social__link" target="_blank">Facebook
         </a>
-      </div>
-      <div class="allies">
-        <ul>
-          <li><img src="" alt="" class="allies__icon-minis"></li>
-          <li><img src="" alt="" class="allies__icon-parK"></li>
-        </ul>
-      </div>
+      </h3>
+        <img src="images/icons/footer/mcj-parque.png" alt="Logo del Ministerio de Cultura y Juventud. Logo del Parque La Libertad" class="allies__icon">
     </section>
   </footer>
-
   <script src="js/menu.js"></script>
 </body>
 

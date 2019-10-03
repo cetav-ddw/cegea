@@ -1,0 +1,42 @@
+.btn {
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn--donate {
+  background-color: $orange;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    width: auto;
+  }
+  @media (min-width: 900px) {
+    width: 150px;
+  }
+
+  &:hover {
+    background-color: $orange-dark; 
+  }
+}
+
+.btn--volunteer {
+  background-color: $yellow;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    width: auto;
+  }
+  @media (min-width: 900px) {
+    width: 150px;
+  }
+
+  &:hover {
+    background-color: $yellow-dark;
+  }
+}

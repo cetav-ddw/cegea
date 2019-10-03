@@ -1,0 +1,95 @@
+footer[role="contentinfo"] {
+  background-color: $green-light;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2% 5%;
+  
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    padding: 1% 5%;
+  }
+}
+
+.allies__icon {
+  margin-top: 5px;
+  width: 200px;
+}
+
+.contact__item {
+  font-family: $font-default;
+  font-size: 1.125rem;
+  list-style: none;
+}
+
+.email {
+  margin-bottom: 25px;
+}
+
+.footer__title {
+  font-family: $font-titles;
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-bottom: 3%;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.5rem;
+    padding-bottom: 5%;
+  }
+}
+
+.email__a {
+  color: $white;
+}
+
+.email__icon {
+  position: relative;
+}
+
+.email__icon::before {
+  content: "";
+  background-image: url("../images/icons/footer/email.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 16px;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  width: 16px;
+}
+
+.email__item {
+  position: relative;
+}
+
+.social__link {
+  color: $white;
+}
+
+.social__link:visited {
+  color: $yellow-light;
+}
+
+.social-media {
+  margin-top: 5%;
+
+  @media (min-width: $breakpoint-md) {
+    margin-top: 0;
+  }
+}
+
+.telephone__icon {
+  position: relative;
+}
+
+.telephone__icon::before {
+  background-image: url("../images/icons/footer/telephone.png");
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 16px;
+  margin-right: 10px;
+  position: relative;
+  width: 16px;
+}

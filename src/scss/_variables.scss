@@ -1,18 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Palanquin+Dark|Quicksand&display=swap");
 
-$white: #ffffff;
-
+$white: #fff;
 $green: #398225;
 $green-light: #5f9750;
-
+$palegreen: #81AF75;
 $orange: #eb751f;
 $orange-light: #e98A46;
 $orange-dark: #c65300;
-
 $yellow: #d4ab20;
 $yellow-light: #e9c13a;
 $yellow-dark: #c19500;
-
 $red:  #d01E15;
 
 $font-titles: "Palanquin Dark", Arial, Verdana, sans-serif;
@@ -23,8 +20,8 @@ $h2-size: 1.87rem; // 30px
 $h3-size: 1.68rem; // 27px
 $text-size: 1rem; // 16px
 
-$breakpoint-xs: 0px;
-$breakpoint-sm: 320px;
+$breakpoint-xs: 320px;
+$breakpoint-sm: 500px;
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
-$breakpoint-xl: 1320px;
+$breakpoint-xl: 1440px;

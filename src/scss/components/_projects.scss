@@ -13,17 +13,11 @@
   background-color: rgba(204, 204, 204, 0.158);
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
   padding: 15px 0 0;
 
   @media (min-width: $breakpoint-md) {
     background-color: transparent;
     justify-content: space-between;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-  @media (min-width: $breakpoint-lg) {
-    max-width: 80%;
   }
 }
 
@@ -38,13 +32,15 @@
   @media (min-width: $breakpoint-md) {
     position: relative;
     height: 30vw;
+    margin-bottom: 3%;
+    
     &:first-child {
       width: 55%;
     }
-    &:nth-child(2n){
+    &:nth-child(2n) {
       width: 42%;
     }
-    &:nth-child(3n){
+    &:nth-child(3n) {
       width: 42%;
     }
     &:nth-child(4n) {
@@ -56,6 +52,9 @@
   }
   @media (min-width: $breakpoint-lg) {
     height: 20vw;
+  }
+  @media (min-width: $breakpoint-xl) {
+    height: 15vw;
   }
 }
 
@@ -153,5 +152,8 @@
   }
   @media (min-width: $breakpoint-lg) {
     top: 15vw;
+  }
+  @media (min-width: $breakpoint-xl) {
+    top: 11vw;
   }
 }

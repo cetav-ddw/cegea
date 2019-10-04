@@ -17,3 +17,14 @@ body {
   position: absolute;
   width: 1px;
 }
+
+.wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 90%;
+  }
+  @media (min-width: $breakpoint-xl) {
+    max-width: 80%;
+  }
+}

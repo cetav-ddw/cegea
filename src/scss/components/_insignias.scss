@@ -1,0 +1,66 @@
+.insignia__img {
+  &:last-child {
+    margin-top: 15px;
+    @media (min-width: $breakpoint-sm) {
+      margin-top: 0;
+    }
+  }
+}
+
+.insignia__img--big {
+  max-width: 220px;
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: 270px;
+  }
+}
+
+.insignia__img--small {
+  width: 120px;
+
+  @media (min-width: $breakpoint-lg) {
+    width: 150px;
+  }
+}
+
+.insignias {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.insignias__item {
+  list-style: none;
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+  }
+}
+
+.insignias__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+
+  @media (min-width: 415px) {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}
+
+.insignias__title {
+  color: $orange;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 30px;
+  }
+  & > span {
+    display: block;
+    font-family: $font-titles;
+    margin-top: 5px;
+    margin-bottom: 35px;
+  }
+}

@@ -122,8 +122,8 @@
 
   & > span {
     display: block;
-    margin-top: 5px;
     font-family: $font-titles;
+    margin-top: 5px;
   }
   @media (min-width: $breakpoint-md) {
     font-size: $h2-size;
@@ -132,17 +132,17 @@
 
 .projects__title-item {
   color: $dark-grey;
-  text-align: center;
   font-family: $font-titles;
   font-weight: bold;
   margin: 5px;
+  text-align: center;
   
   @media (min-width: $breakpoint-md) {
     color: $white;
     font-size: $h3-size;
-    top: 25vw;
     margin: 0;
     position: absolute;
+    top: 25vw;
     width: 100%;
   }
   @media (min-width: $breakpoint-lg) {

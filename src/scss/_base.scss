@@ -6,14 +6,6 @@ body {
   font-family: $font-default;
 }
 
-.space-bottom {
-  padding-bottom: 30px;
-
-  @media (min-width: $breakpoint-md) {
-    padding-bottom: 60px;
-  }
-}
-
 // tomado de: https://stackoverflow.com/questions/19758598/what-is-sr-only-in-bootstrap-3
 .sr-only {
   border: 0;
@@ -24,4 +16,18 @@ body {
   padding: 0;
   position: absolute;
   width: 1px;
+}
+
+.wrapper {
+  margin: 30px auto;
+
+  @media (min-width: $breakpoint-md) {
+  margin-bottom: 60px;
+  margin-top: 60px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+    max-width: 1440px;
+  }
 }

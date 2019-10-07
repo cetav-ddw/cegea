@@ -1,6 +1,7 @@
 .insignia__img {
   &:last-child {
     margin-top: 15px;
+    
     @media (min-width: $breakpoint-sm) {
       margin-top: 0;
     }
@@ -21,11 +22,6 @@
   @media (min-width: $breakpoint-lg) {
     width: 150px;
   }
-}
-
-.insignias {
-  margin: 0 auto;
-  max-width: 1440px;
 }
 
 .insignias__item {

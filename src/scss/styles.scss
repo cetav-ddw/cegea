@@ -1,9 +1,10 @@
 @import 'variables';
 @import 'util/normalize';
 @import 'base';
+@import 'util/mixins';
 @import 'patterns/buttons';
 @import 'components/branding';
 @import 'components/header';
 @import 'components/navigation';
-@import 'components/footer';
 @import 'components/projects';
+@import 'components/footer';

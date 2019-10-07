@@ -1,0 +1,73 @@
+.btn {
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn--activity{
+  position: relative;
+  top: -25px;
+  margin-left: 23px;
+}
+
+.btn--agenda {
+  background: $yellow;
+  border-radius: 6px;
+  color: $white;
+  font-family:$font-default;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px;
+  text-decoration: none; 
+  
+  &:hover {
+    background-color: $yellow-dark;
+  }
+}
+
+.btn--donate {
+  background-color: $orange;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    width: auto;
+  }
+  @media (min-width: 900px) {
+    width: 150px;
+  }
+
+  &:hover {
+    background-color: $orange-dark; 
+  }
+}
+
+.btn--more {
+  bottom: -13px;
+  bottom: 3px;
+  position: relative;
+  right: 3%;
+}
+
+.btn--volunteer {
+  background-color: $yellow;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    width: auto;
+  }
+  @media (min-width: 900px) {
+    width: 150px;
+  }
+
+  &:hover {
+    background-color: $yellow-dark;
+  }
+}
+
+
+

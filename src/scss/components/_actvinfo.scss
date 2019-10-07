@@ -1,0 +1,35 @@
+.agenda__month,
+.agenda__day {
+  background: $white;
+  display: flex;
+  font-family: $font-titles;
+  font-size: 1.12rem;
+  font-weight: bold;
+  height: 32px;
+  justify-content: center;
+}
+
+.agenda__day {
+  background: #4A4A4A;
+  color: $white;
+  font-size: 1.43rem;
+  height: 32px;
+}
+
+.agenda__date {
+  border:2px solid #828282;
+  display: block;
+  position: relative;
+  right: 49px; 
+  width: 58px;
+}
+
+li {
+  list-style: none;
+}
+
+.main__title {
+  position: relative;
+  top: 37px;
+}
+

@@ -1,12 +1,10 @@
-.agenda{
-  float: right;
-  margin-right: 30px;
+.agenda {
   position: relative;
-  top: 5%;
+  top: 9%;
 
   @media (min-width: $breakpoint-md) {
     &::after{
-      bottom: 3px;
+      bottom: 1px;
       background-color: #d4aa15;
       content: "";
       height: 100%;
@@ -17,10 +15,24 @@
   }
 }
 
-.agenda__container{
+.agenda__container {
   background: rgba(86, 146, 70, 0.849);
-  padding: 40px;
-  margin: 0 25px;
+  margin: 0 auto;
+  max-width: 83%;
+  padding-top: 17px;
+  padding-bottom: 23px;
+
+  @media (min-width: $breakpoint-md) {
+    float: right;
+    margin: 0 36px;
+    width: 50%;  
+  }
+  @media (min-width: $breakpoint-lg) {
+    width: 34%;
+  }
+  @media (min-width: $breakpoint-xl) {
+    width: 28%;
+  }
 }
 
 .agenda__item-title {
@@ -32,8 +44,10 @@
 .agenda__title{
   color: $white;
   margin: 0;
-  & > span {
+  
+}
+
+.agenda__title--font {
     display: block;
     font-family: $font-titles;
-  }
 }

@@ -541,13 +541,11 @@ header[role="banner"] {
       font-size: 1rem; } }
 
 .agenda {
-  float: right;
-  margin-right: 30px;
   position: relative;
-  top: 5%; }
+  top: 9%; }
   @media (min-width: 768px) {
     .agenda::after {
-      bottom: 3px;
+      bottom: 1px;
       background-color: #d4aa15;
       content: "";
       height: 100%;
@@ -557,8 +555,21 @@ header[role="banner"] {
 
 .agenda__container {
   background: rgba(86, 146, 70, 0.849);
-  padding: 40px;
-  margin: 0 25px; }
+  margin: 0 auto;
+  max-width: 83%;
+  padding-top: 17px;
+  padding-bottom: 23px; }
+  @media (min-width: 768px) {
+    .agenda__container {
+      float: right;
+      margin: 0 36px;
+      width: 50%; } }
+  @media (min-width: 1024px) {
+    .agenda__container {
+      width: 34%; } }
+  @media (min-width: 1440px) {
+    .agenda__container {
+      width: 28%; } }
 
 .agenda__item-title {
   color: #fff;
@@ -568,9 +579,10 @@ header[role="banner"] {
 .agenda__title {
   color: #fff;
   margin: 0; }
-  .agenda__title > span {
-    display: block;
-    font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
+
+.agenda__title--font {
+  display: block;
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
 
 .agenda__month,
 .agenda__day {
@@ -586,7 +598,7 @@ header[role="banner"] {
   background: #4A4A4A;
   color: #fff;
   font-size: 1.43rem;
-  height: 32px; }
+  height: 41px; }
 
 .agenda__date {
   border: 2px solid #828282;

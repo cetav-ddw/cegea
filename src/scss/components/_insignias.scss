@@ -51,12 +51,13 @@
   text-align: center;
 
   @media (min-width: $breakpoint-md) {
-    font-size: 30px;
+    font-size: $h2-size;
   }
-  & > span {
-    display: block;
-    font-family: $font-titles;
-    margin-top: 5px;
-    margin-bottom: 35px;
-  }
+}
+
+.insignias__title--font {
+  display: block;
+  font-family: $font-titles;
+  margin-top: 5px;
+  margin-bottom: 35px;
 }

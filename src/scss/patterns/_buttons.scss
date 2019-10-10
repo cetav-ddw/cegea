@@ -5,12 +5,6 @@
   font-weight: bold;
 }
 
-.btn--activity{
-  position: relative;
-  top: -25px;
-  margin-left: 23px;
-}
-
 .btn--agenda {
   background: $yellow;
   border-radius: 6px;
@@ -20,7 +14,7 @@
   font-weight: bold;
   padding: 6px;
   text-decoration: none; 
-  
+
   &:hover {
     background-color: $yellow-dark;
   }
@@ -42,13 +36,6 @@
   &:hover {
     background-color: $orange-dark; 
   }
-}
-
-.btn--more {
-  bottom: -13px;
-  bottom: 3px;
-  position: relative;
-  right: 3%;
 }
 
 .btn--volunteer {

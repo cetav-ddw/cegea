@@ -26,10 +26,6 @@
   margin-bottom: 25px;
   width: 50%;
 
-  &:first-child {
-    width: 100%;
-  }
-  
   @media (min-width: $breakpoint-md) {
     height: 30vw;
     margin-bottom: 3%;
@@ -62,50 +58,63 @@
   @media (min-width: $breakpoint-xl) {
     height: 15vw;
   }
+  &:first-child {
+    width: 100%;
+  }
 }
 
 .projects__item--reforest {
-  @include project;
+  background-size: contain;
   background: url('../../images/mobile-reforestacion.png')  no-repeat;
-
+  
   @media (min-width: $breakpoint-md) {
-    background-image: url('../../images/reforestacion.jpg')
+    background-image: url('../../images/reforestacion.jpg');
+    background-size: cover;
+		box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.267);
   }
 }
 
 .projects__item--wildlife {
-  @include project;
+  background-size: contain;
   background: url('../../images/mobile-avifauna.png')  no-repeat;
-
+  
   @media (min-width: $breakpoint-md) {
     background-image: url('../../images/avifauna.jpg');
+    background-size: cover;
+		box-shadow: inset 0 0 0 100vw #0004;
   }
 }
 
 .projects__item--gardens {
-  @include project;
+  background-size: contain;
   background: url('../../images/mobile-jardin-botanico.png')  no-repeat;
-
+  
   @media (min-width: $breakpoint-md) {
     background-image: url('../../images/jardin-botanico.jpg');
+    background-size: cover;
+		box-shadow: inset 0 0 0 100vw #0004;
   }
 }
 
 .projects__item--conservation {
-  @include project;
-  background: url('../../images/mobile-conservacion-jardines.png') no-repeat;  
-
+  background-size: contain;
+  background: url('../../images/mobile-conservacion-jardines.png') no-repeat;
+  
   @media (min-width: $breakpoint-md) {
     background-image: url('../../images/conservacion-jardines.jpg');
+    background-size: cover;
+		box-shadow: inset 0 0 0 100vw #0004;
   }
 }
 
 .projects__item--education {
-  @include project;
+  background-size: contain;
   background: url('../../images/mobile-educacion.png')  no-repeat;
-
+  
   @media (min-width: $breakpoint-md) {
     background-image: url('../../images/educacion.jpg');
+    background-size: cover;
+		box-shadow: inset 0 0 0 100vw #0004;
   }
 }
 

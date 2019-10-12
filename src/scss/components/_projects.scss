@@ -129,11 +129,14 @@
   color: $orange;
   text-align: center;
 
-  & > span {
+  
+}
+
+.projects__title--font {
     display: block;
     font-family: $font-titles;
     margin-top: 5px;
-  }
+
   @media (min-width: $breakpoint-md) {
     font-size: $h2-size;
   }

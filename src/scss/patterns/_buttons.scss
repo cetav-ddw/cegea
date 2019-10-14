@@ -5,16 +5,14 @@
   font-weight: bold;
 }
 
-.btn--agenda {
+.btn--moreinfo {
   background: $yellow;
   border-radius: 6px;
   color: $white;
-  font-family:$font-default;
   font-size: 14px;
   font-weight: bold;
   padding: 6px;
   text-decoration: none; 
-
   &:hover {
     background-color: $yellow-dark;
   }
@@ -55,6 +53,3 @@
     background-color: $yellow-dark;
   }
 }
-
-
-

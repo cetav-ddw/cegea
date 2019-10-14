@@ -1,11 +1,11 @@
 .agenda {
   position: relative;
-  top: 9%;
+  top: 3%;
 
   @media (min-width: $breakpoint-md) {
-    &::after{
+    &::after {
+      background-color: $yellow;
       bottom: 1px;
-      background-color: #d4aa15;
       content: "";
       height: 100%;
       left: -21px;
@@ -13,14 +13,17 @@
       width: 5px;
     }
   }
+  @media (min-width: $breakpoint-lg) {
+    top: 7%;
+  }
 }
 
 .agenda__container {
   background: rgba(86, 146, 70, 0.849);
   margin: 0 auto;
   max-width: 83%;
-  padding-top: 17px;
   padding-bottom: 23px;
+  padding-top: 17px;
 
   @media (min-width: $breakpoint-md) {
     float: right;
@@ -41,13 +44,12 @@
   margin-bottom: 11px;
 }
 
-.agenda__title{
+.agenda__title {
   color: $white;
   margin: 0;
-  
 }
 
 .agenda__title--font {
-    display: block;
-    font-family: $font-titles;
+  display: block;
+  font-family: $font-titles;
 }

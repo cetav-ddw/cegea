@@ -326,16 +326,15 @@ body {
   text-decoration: none;
   font-weight: bold; }
 
-.btn--agenda {
+.btn--moreinfo {
   background: #d4ab20;
   border-radius: 6px;
   color: #fff;
-  font-family: "Quicksand", Arial, Verdana, sans-serif;
   font-size: 14px;
   font-weight: bold;
   padding: 6px;
   text-decoration: none; }
-  .btn--agenda:hover {
+  .btn--moreinfo:hover {
     background-color: #c19500; }
 
 .btn--donate {
@@ -542,23 +541,26 @@ header[role="banner"] {
 
 .agenda {
   position: relative;
-  top: 9%; }
+  top: 3%; }
   @media (min-width: 768px) {
     .agenda::after {
+      background-color: #d4ab20;
       bottom: 1px;
-      background-color: #d4aa15;
       content: "";
       height: 100%;
       left: -21px;
       position: absolute;
       width: 5px; } }
+  @media (min-width: 1024px) {
+    .agenda {
+      top: 7%; } }
 
 .agenda__container {
   background: rgba(86, 146, 70, 0.849);
   margin: 0 auto;
   max-width: 83%;
-  padding-top: 17px;
-  padding-bottom: 23px; }
+  padding-bottom: 23px;
+  padding-top: 17px; }
   @media (min-width: 768px) {
     .agenda__container {
       float: right;
@@ -584,8 +586,7 @@ header[role="banner"] {
   display: block;
   font-family: "Palanquin Dark", Arial, Verdana, sans-serif; }
 
-.agenda__month,
-.agenda__day {
+.date__container {
   background: #fff;
   display: flex;
   font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
@@ -594,22 +595,22 @@ header[role="banner"] {
   height: 32px;
   justify-content: center; }
 
-.agenda__day {
-  background: #4A4A4A;
+.activity__day {
+  background: #333;
   color: #fff;
-  font-size: 1.43rem;
+  font-size: 1.68rem;
   height: 41px; }
 
-.agenda__date {
-  border: 2px solid #828282;
+.activity__date {
+  border: 2px solid #666;
   margin-right: 16px;
   width: 58px; }
 
 li {
   display: flex;
-  margin: 26px 0px;
   justify-content: start;
-  list-style: none; }
+  list-style: none;
+  margin: 26px 0px; }
 
 .hero_image {
   background-image: url("../../images/heroimage/laguna2x.jpg");

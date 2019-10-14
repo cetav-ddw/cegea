@@ -1,5 +1,4 @@
-.agenda__month,
-.agenda__day {
+.date__container {
   background: $white;
   display: flex;
   font-family: $font-titles;
@@ -9,26 +8,22 @@
   justify-content: center;
 }
 
-.agenda__day {
-  background: #4A4A4A;
+.activity__day {
+  background: #333;
   color: $white;
-  font-size: 1.43rem;
+  font-size: $h3-size;
   height: 41px;
 }
 
-.agenda__date {
-  border:2px solid #828282;
+.activity__date {
+  border:2px solid #666;
   margin-right: 16px;
   width: 58px;
 }
 
 li {
   display: flex;
-  margin: 26px 0px;
   justify-content: start;
   list-style: none;
+  margin: 26px 0px;
 }
-
-
-
-

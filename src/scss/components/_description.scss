@@ -1,0 +1,68 @@
+.descrip__text {
+  color: $dark-grey;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 85%;
+  padding-top: 25px;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.375rem;
+    max-width: 100%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1.5rem;
+    padding-top: 40px;
+  }
+}
+
+.scroll__circle {
+  border: 3px solid $green-light;
+  border-radius: 50px;
+  margin: 4.1px auto;
+
+  @media (min-width: $breakpoint-md) {
+    border: 4px solid $green-light;
+    margin: 6px auto;
+  }
+}
+
+.scroll-down {
+  animation: scrolling 2s infinite;
+}
+
+.scroll__icon {
+  width: 25px;
+
+  @media (min-width: $breakpoint-md) {
+    width: 28px;
+  }
+}
+
+.scroll__circle--big {
+  height: 61px;
+  width: 61px;
+
+  @media (min-width: $breakpoint-md) {
+    height: 75px;
+    width: 75px;
+  }
+}
+
+.scroll__circle--small {
+  display: flex;
+  height: 45px;
+  justify-content: center;
+  width: 45px;
+
+  @media (min-width: $breakpoint-md) {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+@keyframes scrolling {
+	50% {
+		transform: translate(0, 10px);
+	}
+}

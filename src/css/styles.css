@@ -606,7 +606,7 @@ header[role="banner"] {
   margin-right: 16px;
   width: 58px; }
 
-li {
+.activity__item {
   display: flex;
   justify-content: start;
   list-style: none;

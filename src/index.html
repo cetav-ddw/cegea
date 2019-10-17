@@ -14,9 +14,7 @@
     <h1 class="brand">
       <span class="sr-only">Dimensión ambiental - Parque La Libertad</span>
     </h1>
-
     <button type="button" id="btn-menu" class="btn-menu">Menu</button>
-
     <nav role="navigation" class="main-nav js-main-nav">
       <ul id="cont-menu" class="main-nav__cont">
         <li class="main-nav__item">
@@ -29,16 +27,16 @@
           <a class="main-nav__link" href="#">Programas</a>
           <ul id="sub-menu" class="sub-nav">
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">Gestión ambiental</a>
+              <a class="sub-nav__link" href="#">Gestión ambiental</a>
             </li>
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">PEDS</a>
+              <a class="sub-nav__link" href="#">PEDS</a>
             </li>
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">PGCS</a>
+              <a class="sub-nav__link" href="#">PGCS</a>
             </li>
             <li class="sub-nav__item">
-              <a  class="sub-nav__link"href="#">Formación técnica</a>
+              <a class="sub-nav__link" href="#">Formación técnica</a>
             </li>
           </ul>
         </li>
@@ -49,48 +47,58 @@
       </ul>
     </nav>
   </header>
-  <main role="main" class="main-info">
-    <section class="agenda">
-      <h2 class="agenda__title">Próximas actividades</h2>
-      <ul class="agenda__cont">
-        <li class="agenda__item">
-          <h3 class="agenda__item-title">Club Eco-manualidades</h3>
-          <span class="agenda__date">
-            <time class="agenda__month" datetime="2019-08">Agosto</time>
-            <time class="agenda__day" datetime="2020-08-13">13</time>
-          </span>
-          <a href="#" class="agenda__link">Más información</a>
-        </li>
-        <li class="agenda__item">
-          <h3>Club mensual de jardinería</h3>
-          <span>
-            <time datetime="2019-10">Octubre</time>
-            <time datetime="2019-10-20">20</time>
-          </span>
-          <a href="#" class="info">Más información</a>
-        </li>
-        <li class="agenda__item">
-          <h3>titulo</h3>
-          <span>
-            <time datetime="2019-08">Agosto</time>
-            <time datetime="2020-08-13">13</time>
-          </span>
-          <a href="#" class="info">Más información</a>
-        </li>
-      </ul>
-      <a class="agenda__acts-link" href="#">Más actividades</a>
-    </section>
-  </main>
-
-  <section class="description wrapper">
-  <div class="scroll-down">
-    <div class="scroll__circle scroll__circle--big">
-      <div class="scroll__circle scroll__circle--small">
-        <img src="images/icons/description/arrow.svg" alt="" class="scroll__icon">
+  <section class="agenda__heroimage">
+    <div class="hero_image">
+      <div class="agenda agenda__container">
+        <ul>
+          <h2 class="agenda__title">Próximas
+            <span class="agenda__title--font">actividades</span>
+          </h2>
+          <li class="activity__item">
+            <div class="activity__date">
+              <time class="activity__month date__container" datetime="2019-08">Agost</time>
+              <time class="activity__day date__container" datetime="2020-08-13">13</time>
+            </div>
+            <div class="agenda__elements">
+              <h3 class="agenda__item-title">Club Eco-manualidades</h3>
+              <a href="#" class="btn btn--moreinfo">Más información</a>
+            </div>
+          </li>
+          <li class="activity__item">
+            <div class="activity__date">
+              <time class="activity__month date__container" datetime="2019-08">Oct</time>
+              <time class="activity__day date__container" datetime="2020-08-13">20</time>
+            </div>
+            <div class="agenda__elements">
+              <h3 class="agenda__item-title">Club mensual de jardinería</h3>
+              <a href="#" class="btn btn--moreinfo">Más información</a>
+            </div>
+          </li>
+          <li class="activity__item">
+            <div class="activity__date">
+              <time class="activity__month date__container" datetime="2019-08">Nov</time>
+              <time class="activity__day date__container" datetime="2020-08-13">05</time>
+            </div>
+            <div class="agenda__elements">
+              <h3 class="agenda__item-title">Siembra mensual de árboles</h3>
+              <a href="#" class="btn btn--moreinfo">Más información</a>
+            </div>
+          </li>
+          <a href="#" class="btn btn--moreinfo">Ver más actividades</a>
+        </ul>
       </div>
     </div>
-  </div>
-  <p class="descrip__text">El Eje Ambiental del Parque La Libertad busca promover la transformación de comunidades sostenibles, mediante acciones colaborativas de educación y rehabilitación ambiental.</p>
+  </section>
+  <section class="description wrapper">
+    <div class="scroll-down">
+      <div class="scroll__circle scroll__circle--big">
+        <div class="scroll__circle scroll__circle--small">
+          <img src="images/icons/description/arrow.svg" alt="" class="scroll__icon">
+        </div>
+      </div>
+    </div>
+    <p class="descrip__text">El Eje Ambiental del Parque La Libertad busca promover la transformación de comunidades
+      sostenibles, mediante acciones colaborativas de educación y rehabilitación ambiental.</p>
   </section>
 
   <section class="projects">
@@ -123,22 +131,23 @@
       </li>
     </ul>
   </section>
-  
   <section class="insignias wrapper">
     <h2 class="insignias__title">Nuestras
       <span class="insignias__title--font">insignias</span>
     </h2>
-      <ul class="insignias__list">
-        <li class="insignias__item">
-          <img src="images/insignias/globalgiving.png" alt="Global Giving" class="insignias__img insignia__img--small">
-        </li>
-        <li class="insignias__item">
-          <img src="images/insignias/cambioclimatico.png" alt="Cambio Climático" class="insignias__img insignia__img--small">
-        </li>
-        <li class="insignias__item">
-          <img src="images/insignias/cartadelatierra.png" alt="Carta de la Tierra" class="insignias__img insignia__img--big">
-        </li>
-      </ul>
+    <ul class="insignias__list">
+      <li class="insignias__item">
+        <img src="images/insignias/globalgiving.png" alt="Global Giving" class="insignias__img insignia__img--small">
+      </li>
+      <li class="insignias__item">
+        <img src="images/insignias/cambioclimatico.png" alt="Cambio Climático"
+          class="insignias__img insignia__img--small">
+      </li>
+      <li class="insignias__item">
+        <img src="images/insignias/cartadelatierra.png" alt="Carta de la Tierra"
+          class="insignias__img insignia__img--big">
+      </li>
+    </ul>
   </section>
 
   <footer role="contentinfo">
@@ -153,17 +162,17 @@
         <li class="contact__item">
           <span class="telephone__icon">
             2276-9400 ext: 2016
-          </span> 
+          </span>
         </li>
       </ul>
     </section>
-
     <section class="social-media">
-      <h3 class="social__title footer__title">Síganos en 
+      <h3 class="social__title footer__title">Síganos en
         <a href="https://www.facebook.com/ejeambientalpll/" class="social__link" target="_blank">Facebook
         </a>
       </h3>
-        <img src="images/icons/footer/mcj-parque.png" alt="Logo del Ministerio de Cultura y Juventud. Logo del Parque La Libertad" class="allies__icon">
+      <img src="images/icons/footer/mcj-parque.png"
+        alt="Logo del Ministerio de Cultura y Juventud. Logo del Parque La Libertad" class="allies__icon">
     </section>
   </footer>
   <script src="js/menu.js"></script>

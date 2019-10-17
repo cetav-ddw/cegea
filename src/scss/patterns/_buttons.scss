@@ -5,6 +5,19 @@
   font-weight: bold;
 }
 
+.btn--moreinfo {
+  background: $yellow;
+  border-radius: 6px;
+  color: $white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px;
+  text-decoration: none; 
+  &:hover {
+    background-color: $yellow-dark;
+  }
+}
+
 .btn--donate {
   background-color: $orange;
   display: block;

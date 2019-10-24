@@ -1,0 +1,104 @@
+.impact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 45px;
+  }
+}
+
+.impact__description {
+  color: $dark-grey;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 85%;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.25rem;
+    max-width: 100%;
+  }
+}
+
+.impact__item--forest {
+  background-image: url(../images/impact/impact-1.jpg);
+}
+
+.impact__item--garden {
+  background-image: url(../images/impact/impact-2.jpg);
+}
+
+.impact__item {
+  align-content: flex-end;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  height: 60vw;
+  margin-bottom: 15px;
+  padding: 20px;
+  position: relative;
+  width: 90%;
+  z-index: 1;
+
+  @media (min-width: $breakpoint-sm) {
+    height: 50vw;
+  }
+  @media (min-width: 620px) {
+    height: 40vw;
+    margin-bottom: 25px;
+    padding: 30px;
+  }
+  @media (min-width: $breakpoint-md) {
+    background-position: 35%;
+    height: 45vw;
+    margin-bottom: 0;
+    max-width: 30%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    height: 35vw;
+  }
+  @media (min-width: $breakpoint-xl) {
+    height: 25vw;
+  }
+}
+
+.impact__item::before {
+  background-color: black;
+  content: " ";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0; 
+  width: 100%;
+  z-index: -1;
+}
+
+.impact__item__description {
+  color: $white;
+  font-weight: 600;
+  width: 100%;
+
+  @media (min-width: $breakpoint-xl) {
+    font-size: 1.25rem;
+  }
+}
+
+.impact__item__icon {
+  width: 48px;
+
+  @media (min-width: $breakpoint-lg) {
+    width: auto;
+  }
+}
+
+.impact__item--teacher {
+  background-image: url(../images/impact/impact-3.jpg);
+}

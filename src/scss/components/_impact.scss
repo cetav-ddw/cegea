@@ -85,9 +85,16 @@
   color: $white;
   font-weight: 600;
   width: 100%;
-
-  @media (min-width: $breakpoint-xl) {
+  
+  @media (min-width: $breakpoint-md) {
+    height: 40%;
+  }
+  @media (min-width: 960px) {
+    height: 25%;
+  }
+  @media (min-width: 1280px) {
     font-size: 1.25rem;
+    height: 25%;
   }
 }
 
@@ -99,6 +106,6 @@
   }
 }
 
-.impact__item--teacher {
+.impact__item--education {
   background-image: url(../images/impact/impact-3.jpg);
 }

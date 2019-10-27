@@ -320,6 +320,19 @@ body {
   position: absolute;
   width: 1px; }
 
+.titles {
+  color: #eb751f;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .titles {
+      font-size: 1.87rem; } }
+
+.titles--font {
+  display: block;
+  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
+  margin-bottom: 35px;
+  margin-top: 5px; }
+
 .wrapper {
   margin: 30px auto; }
   @media (min-width: 768px) {
@@ -749,19 +762,6 @@ header[role="banner"] {
   font-weight: bold;
   text-align: center; }
 
-.achievements__title {
-  color: #eb751f;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .achievements__title {
-      font-size: 1.87rem; } }
-
-.achievements__title--font {
-  display: block;
-  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
-  margin-bottom: 35px;
-  margin-top: 5px; }
-
 .insignia__img:last-child {
   margin-top: 15px; }
   @media (min-width: 500px) {
@@ -797,19 +797,6 @@ header[role="banner"] {
     .insignias__list {
       margin: 0 auto;
       max-width: 80%; } }
-
-.insignias__title {
-  color: #eb751f;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .insignias__title {
-      font-size: 1.87rem; } }
-
-.insignias__title--font {
-  display: block;
-  font-family: "Palanquin Dark", Arial, Verdana, sans-serif;
-  margin-top: 5px;
-  margin-bottom: 35px; }
 
 .projects__cont {
   list-style: none;

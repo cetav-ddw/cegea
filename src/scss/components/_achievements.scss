@@ -1,6 +1,6 @@
 .achievements__container {
-  border-bottom-left-radius: 45px * 2;
-  border-bottom-right-radius: 45px * 2;
+  border-bottom-left-radius: 90px;
+  border-bottom-right-radius: 90px;
   height: 70px;
   width: 100px;
 }
@@ -73,20 +73,4 @@
   font-size: 21px;
   font-weight: bold;
   text-align: center;
-}
-
-.achievements__title {
-  color: $orange;
-  text-align: center;
-  
-  @media (min-width: $breakpoint-md) {
-    font-size: $h2-size;
-  }
-}
-
-.achievements__title--font {
-  display: block;
-  font-family: $font-titles;
-  margin-bottom: 35px;
-  margin-top: 5px;
 }

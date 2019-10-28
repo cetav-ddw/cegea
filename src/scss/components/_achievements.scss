@@ -80,9 +80,28 @@
   text-align: center;
 }
 
-.achievements__image--bird::before{
-  background-image: url(../../images/logros/crow.png);
-  width: 100px;
+.achievements__icon{
+  position: relative;
+}
+
+.achievements__icon::before{
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
   height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.achievements__icon--bird::before{
+  background-image: url(../images/logros/crow.png);
+}
+
+.achievements__icon--tree::before{
+  background-image: url(../images/logros/arboles.png);
+}
+
+.achievements__icon--volunteer::before{
+  background-image: url(../images/logros/volunteers.png);
 }
 

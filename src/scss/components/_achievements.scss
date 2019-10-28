@@ -42,9 +42,29 @@
   }
 }
 
-.achievements__image {
-  display: block;
-  width: 37%;
+.achievements__icon {
+  position: relative;
+}
+
+.achievements__icon::before {
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.achievements__icon--bird::before {
+  background-image: url(../images/logros/crow.png);
+}
+
+.achievements__icon--tree::before {
+  background-image: url(../images/logros/arboles.png);
+}
+
+.achievements__icon--volunteer::before {
+  background-image: url(../images/logros/volunteers.png);
 }
 
 .achievements__item {
@@ -79,29 +99,3 @@
   font-weight: bold;
   text-align: center;
 }
-
-.achievements__icon{
-  position: relative;
-}
-
-.achievements__icon::before{
-  content: "";
-  background-repeat: no-repeat;
-  display: inline-block;
-  height: 100px;
-  width: 100px;
-  position: relative;
-}
-
-.achievements__icon--bird::before{
-  background-image: url(../images/logros/crow.png);
-}
-
-.achievements__icon--tree::before{
-  background-image: url(../images/logros/arboles.png);
-}
-
-.achievements__icon--volunteer::before{
-  background-image: url(../images/logros/volunteers.png);
-}
-

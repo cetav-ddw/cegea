@@ -56,15 +56,20 @@
     padding: 30px;
   }
   @media (min-width: $breakpoint-md) {
-    background-position: 35%;
+    background-position: 70%;
     height: 45vw;
     margin-bottom: 0;
     max-width: 30%;
   }
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: 925px) {
+    background-position: 50%;
     height: 35vw;
   }
+  @media (min-width: $breakpoint-lg) {
+    background-position: 70%;
+  }
   @media (min-width: $breakpoint-xl) {
+    background-position: 50%;
     height: 25vw;
   }
 }

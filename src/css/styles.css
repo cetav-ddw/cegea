@@ -728,7 +728,8 @@ header[role="banner"] {
   color: #d01E15; }
 
 .achievements__description {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1rem; }
   @media (min-width: 1024px) {
     .achievements__description {
       font-size: 1.25rem; } }

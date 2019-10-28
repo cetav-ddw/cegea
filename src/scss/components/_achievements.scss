@@ -35,6 +35,10 @@
 
 .achievements__description {
   font-weight: bold;
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1.25rem;
+  }
 }
 
 .achievements__image {
@@ -70,7 +74,14 @@
 .achievements__porcentage {
   color: $white;
   font-family: $font-titles;
-  font-size: 21px;
+  font-size: 1.37;
   font-weight: bold;
   text-align: center;
 }
+
+.achievements__image--bird::before{
+  background-image: url(../../images/logros/crow.png);
+  width: 100px;
+  height: 100px;
+}
+

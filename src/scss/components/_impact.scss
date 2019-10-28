@@ -26,6 +26,10 @@
   }
 }
 
+.impact__item--education {
+  background-image: url(../images/impact/impact-3.jpg);
+}
+
 .impact__item--forest {
   background-image: url(../images/impact/impact-1.jpg);
 }
@@ -104,13 +108,26 @@
 }
 
 .impact__item__icon {
-  width: 48px;
-
-  @media (min-width: $breakpoint-lg) {
-    width: auto;
-  }
+  position: relative;
 }
 
-.impact__item--education {
-  background-image: url(../images/impact/impact-3.jpg);
+.impact__item__icon::before {
+  content: "";
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 64px;
+  position: relative;
+  width: 64px;
+}
+
+.impact__icon--earth::before {
+  background-image: url(../images/icons/impact/impact-icon__3.png);
+}
+
+.impact__icon--flower::before {
+  background-image: url(../images/icons/impact/impact-icon__2.png);
+}
+
+.impact__icon--trees::before {
+  background-image: url(../images/icons/impact/impact-icon__1.png);
 }

@@ -5,15 +5,14 @@
   border: 0;
   color: $white;
   display: flex;
-  font-size: 1rem;
   flex-direction: column;
+  font-size: 1rem;
   font-weight: bold;
   padding: 1rem 1rem 1rem .5rem;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: 850px) {
     display: none;
   }
-
   &:before {
     background: transparent url("../images/icons/menu/menu.svg") no-repeat;
     background-size: cover;
@@ -37,42 +36,24 @@
   padding: 0;
   width: 100%;
 
-  @media (min-width: 768px) {
-    width: auto;
-  }
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: 850px) {
     justify-content: space-evenly;
+    width: 48%;
   }
 }
 
 .btn-nav__item {
   list-style: none;
-  position: relative;
   text-align: center;
   width: 50%;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: 850px) {
     align-self: end;
     display: flex;
-    margin: 0 .6rem;
+    width: 130px;
   }
-  @media (min-width: $breakpoint-lg) {
-    margin-left: .8rem;
-    margin-right: .8rem;
-  }
-  @media (min-width: $breakpoint-xl) {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  &:hover {
-    background-color: #73A068;
-
-    @media (min-width: $breakpoint-md) {
-      .sub-nav {
-        display: block;
-      }
-    }
+  @media (min-width: 900px) {
+    width: 150px;
   }
 }
 
@@ -81,13 +62,10 @@
   flex-wrap: wrap;
   width: 100%;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: 850px) {
     flex-wrap: nowrap;
-    margin-left: 20px;
-    width: auto;
-  }
-  @media (min-width: $breakpoint-lg)  {
-    margin-right: 20px;
+    max-width: 900px;
+    width: 75%;
   }
 }
 
@@ -96,39 +74,42 @@
   margin: 0;
   padding: 0;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: 850px) {
     display: flex;
     justify-content: space-evenly;
+    width: 52%;
+  }
+  @media (min-width: $breakpoint-lg)  {
+    width: 57%;
   }
 
   .menu-open & {
     display: block;
-    width: 100%;  
+    width: 100%;
+    @media (min-width: 850px) {
+      display: inherit;
+    }
   }
 }
 
 .main-nav__item {
   list-style: none;
-  margin: 1.5rem;
-  padding: .2rem 0 0;
-  position: relative;
   text-align: center;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: 850px) {
     align-self: baseline;
-    display: flex;
-    margin: 0 .3rem;
-    padding: 1.2rem 1rem 1rem;
-  }
-  @media (min-width: $breakpoint-lg) {
-    margin-left: .8rem;
-    margin-right: .8rem;
+    position: relative;
+    width: auto;
   }
 
   &:hover {
-    background: rgba(37, 37, 37, .1);
-
-    @media (min-width: $breakpoint-md) {
+    .main-nav__link {
+      background-color: #73A068;
+    }
+    @media (min-width: 850px) {
+      .main-nav__link {
+        background: rgba(37, 37, 37, .1);
+      }
       .sub-nav {
         display: block;
       }
@@ -136,49 +117,79 @@
   }
 }
 
+.main-nav__item--about {
+  @media (min-width: 850px) {
+    width: 77px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    width: auto;
+  }
+}
+
+.main-nav__item--programs {
+  @media (min-width: 850px) {
+    padding-bottom: 2.5rem;
+  }
+}
+
 .main-nav__link {
+  background-color: $palegreen;
+  border-top: 1px solid #86b87a;
   color: $white;
+  display: block;
   font-weight: bolder;
   text-decoration: none;
+  padding: 1rem;
 
-  &:hover {
+
+  @media (min-width: 850px) {
+    background-color: $green-light;
+    border-top: none;
     display: block;
+    padding: 1rem 0;
+  }
+  @media (min-width: $breakpoint-lg) {
+    display: block;
+    padding: 1rem 1rem;
   }
 }
 
 .sub-nav {
-  background: linear-gradient(to bottom, rgba(5,4,5,0) 0%, rgba(5,4,5,0) 17%, $palegreen 17%, $palegreen 51%, $palegreen 100%);
   left: 0px;
-  margin-top: 1.4rem;
   padding: 0;
 
-  @media (min-width: $breakpoint-md)  {
-    background-color: $green-light;
+  @media (min-width: 850px)  {
     display: none;
-    margin-top: 2rem;
-    padding-top: 2.6rem;
+    left: -35px;
     position: absolute;
-  }
-  @media (min-width: $breakpoint-lg)  {
-    padding-top: 2.5rem;
+    top: 90px;
+    width: 190px;
+    z-index: 1;
   }
 }
 
 .sub-nav__item {
+  background-color: $palegreen;
   list-style: none;
   padding: .5rem 1rem;
-  
+
   &:hover {
-    background: rgba(37, 37, 37, .1);
+    background-color: #73A068;
+    .sub-nav__link {
+      color: $white;
+    }
+  }
+  @media (min-width: 850px) {
+    border-top: 1px solid #86b87a;
   }
 }
 
 .sub-nav__link {
-  color: $white;
+  color: #d0dfcc;
   font-size: 14px;
   text-decoration: none;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: 850px) {
     font-size: $text-size;
   }
 }

@@ -4,10 +4,11 @@
   content: '';
   display: block;
   height: 61px;
-  margin: 0;
+  margin: 0 0 1rem 1rem;
   width: 191px;
 
-  @media (min-width: $breakpoint-md) {
+  @media (min-width: 850px) {
     background-image: url("../../images/logo/logo2x.png");
+    margin-left: 0;
   }
 }

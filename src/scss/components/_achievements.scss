@@ -1,70 +1,26 @@
-.achievements__container {
-  border-bottom-left-radius: 90px;
-  border-bottom-right-radius: 90px;
-  height: 70px;
-  width: 100px;
-}
-
-.achievements__container--green {
-  background: $green;
-}
-
-.achievements__container--orange {
-  background: $orange;
-}
-
-.achievements__container--red {
-  background: $red;
-}
-
 .achievements__description {
-  font-weight: bold;
-}
-
-.achievements__description--green {
-  color: $green;
-}
-
-.achievements__description--orange {
-  color: $orange;
-}
-
-.achievements__description--red {
-  color: $red;
-}
-
-.achievements__description {
-  font-weight: bold;
-  font-size: 1rem;
-
-  @media (min-width: $breakpoint-lg) {
-    font-size: 1.25rem;
-  }
-}
-
-.achievements__icon {
-  position: relative;
-}
-
-.achievements__icon::before {
-  content: "";
-  background-repeat: no-repeat;
   display: inline-block;
-  height: 100px;
-  width: 100px;
-  position: relative;
+  height: 250px;
+  margin: 0 auto; 
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 200px;
 }
 
-.achievements__icon--bird::before {
-  background-image: url(../images/logros/crow.png);
+.achievements__descript--bird {
+  background: transparent url(../images/logros/aves1x.png) no-repeat;
+  background-size: contain;
 }
 
-.achievements__icon--tree::before {
-  background-image: url(../images/logros/arboles.png);
+.achievements__descript--tree {
+  background: transparent url(../images/logros/arbol1x.png) no-repeat;
+  background-size: contain;
 }
 
-.achievements__icon--volunteer::before {
-  background-image: url(../images/logros/volunteers.png);
+.achievements__descript--volunteers {
+  background: transparent url(../images/logros/voluntario1x.png) no-repeat;
+  background-size: contain;
 }
 
 .achievements__item {
@@ -72,7 +28,7 @@
   display: flex;
   flex-direction: column;
   list-style: none;
-  width: 50%;
+  width: 45%;
   
   @media (min-width: $breakpoint-md) {
     align-self: baseline;
@@ -87,15 +43,8 @@
   padding: 0;
  
   @media (min-width: 415px) {
+    justify-content: space-around;
     margin: 0 auto;
     max-width: 80%;
   }
-}
-
-.achievements__porcentage {
-  color: $white;
-  font-family: $font-titles;
-  font-size: 1.37;
-  font-weight: bold;
-  text-align: center;
 }

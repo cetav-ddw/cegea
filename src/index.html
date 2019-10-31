@@ -11,41 +11,50 @@
 
 <body class="">
   <header role="banner">
-    <h1 class="brand">
-      <span class="sr-only">Dimensión ambiental - Parque La Libertad</span>
-    </h1>
-    <button type="button" id="btn-menu" class="btn-menu">Menu</button>
-    <nav role="navigation" class="main-nav js-main-nav">
-      <ul id="cont-menu" class="main-nav__cont">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Inicio</a>
-        </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">Acerca de nosotros</a>
-        </li>
-        <li id="cont-sub-menu" class="main-nav__item">
-          <a class="main-nav__link" href="#">Programas</a>
-          <ul id="sub-menu" class="sub-nav">
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Gestión ambiental</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">PEDS</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">PGCS</a>
-            </li>
-            <li class="sub-nav__item">
-              <a class="sub-nav__link" href="#">Formación técnica</a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="btn-nav__cont">
-        <li class="btn-nav__item"><a class="btn btn--volunteer" href="#">Voluntariado</a></li>
-        <li class="btn-nav__item"><a class="btn btn--donate" href="#">Donar</a></li>
-      </ul>
-    </nav>
+    <div class="header__wrapper">
+      <h1 class="brand">
+        <span class="sr-only">Dimensión ambiental - Parque La Libertad</span>
+      </h1>
+      <button type="button" id="btn-menu" class="btn-menu">Menu</button>
+      <nav role="navigation" class="main-nav js-main-nav">
+        <ul id="cont-menu" class="main-nav__cont">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Inicio</a>
+          </li>
+          <li class="main-nav__item main-nav__item--about">
+            <a class="main-nav__link" href="about.html">Acerca de nosotros</a>
+          </li>
+          <li id="cont-sub-menu" class="main-nav__item main-nav__item--programs">
+            <a class="main-nav__link" href="#">Programas</a>
+            <ul id="sub-menu" class="sub-nav">
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="environmental-management.html">Gestión ambiental</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="peds.html">PEDS</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="pgcs.html">PGCS</a>
+              </li>
+              <li class="sub-nav__item">
+                <a class="sub-nav__link" href="technical-formation.html">Formación técnica</a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="contact.html">Contacto</a>
+          </li>
+        </ul>
+        <ul class="btn-nav__cont">
+          <li class="btn-nav__item">
+            <a class="btn btn--volunteer" href="volunteering.html">Voluntariado</a>
+          </li>
+          <li class="btn-nav__item">
+            <a class="btn btn--donate" href="donate.html">Donar</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <section class="agenda__heroimage">
@@ -107,19 +116,19 @@
     <h2 class="titles">Nuestros <span class="titles--font">Proyectos</span></h2>
     <ul class="projects__cont">
       <li class="projects__item">
-        <a class="projects__link" href="#">
+        <a class="projects__link" href="environmental-management.html">
           <picture class="project__img">            
             <source media="(min-width: 1320px)" srcset="./images/proyectos/desktop-conservacion.jpg">
             <source media="(min-width: 1024px)" srcset="./images/proyectos/laptop-conservacion.jpg">
             <source media="(min-width: 768px)" srcset="./images/proyectos/tablet-conservacion.jpg">
-            <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-avifauna.jpg">
+            <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-conservacion.jpg">
             <img src="./images/proyectos/laptop-conservacion-jardines.jpg" alt="Fotografía de nuestros programa de conservación de jardines del parque">
           </picture>
           <h3 class="projects__title-item">Conservación de jardines</h3>
         </a>
       </li>
       <li class="projects__item">
-        <a class="projects__link" href="#">
+        <a class="projects__link" href="environmental-management.html">
           <picture class="project__img">            
             <source media="(min-width: 1320px)" srcset="./images/proyectos/desktop-avifauna.jpg">
             <source media="(min-width: 1024px)" srcset="./images/proyectos/laptop-avifauna.jpg">
@@ -131,36 +140,36 @@
         </a>
       </li>
       <li class="projects__item">
-        <a class="projects__link" href="#">
+        <a class="projects__link" href="environmental-management.html">
           <picture class="project__img">
             <source media="(min-width: 1320px)" srcset="./images/proyectos/desktop-reforestacion.jpg">
             <source media="(min-width: 1024px)" srcset="./images/proyectos/laptop-reforestacion.jpg">            
             <source media="(min-width: 768px)" srcset="./images/proyectos/tablet-reforestacion.jpg">
-            <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-avifauna.jpg">
+            <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-reforestacion.jpg">
             <img src="./images/proyectos/laptop-reforestacion.jpg" alt="Fotografía de una de las zonas que han sido reforestadas dentro del Parque La Libertad">
           </picture>
           <h3 class="projects__title-item">Reforestación</h3>
         </a>
       </li>
       <li class="projects__item">
-        <a class="projects__link" href="#">
+        <a class="projects__link" href="peds.html">
           <picture class="project__img">
             <source media="(min-width: 1320px)" srcset="./images/proyectos/desktop-educacion.jpg">
             <source media="(min-width: 1024px)" srcset="./images/proyectos/laptop-educacion.jpg">            
             <source media="(min-width: 768px)" srcset="./images/proyectos/tablet-educacion.jpg">
-            <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-avifauna.jpg">
+            <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-educacion.jpg">
             <img src="./images/proyectos/laptop-educacion.jpg" alt="Fotografía de nuestro programa de educativo">
           </picture>
           <h3 class="projects__title-item">Educación</h3>
         </a>
       </li>
       <li class="projects__item">
-        <a class="projects__link" href="#">
+        <a class="projects__link" href="environmental-management.html">
           <picture class="project__img">
             <source media="(min-width: 1320px)" srcset="./images/proyectos/desktop-jardin-botanico.jpg">
             <source media="(min-width: 1024px)" srcset="./images/proyectos/laptop-jardin-botanico.jpg">            
             <source media="(min-width: 768px)" srcset="./images/proyectos/tablet-jardin-botanico.jpg">
-            <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-avifauna.jpg">
+            <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-jardin-botanico.jpg">
             <img src="./images/proyectos/laptop-jardin-botanico.jpg" alt="Fotografía de nuestros jardines">
           </picture>
           <h3 class="projects__title-item">Jardines Biodiversos</h3>
@@ -230,6 +239,7 @@
         alt="Logo del Ministerio de Cultura y Juventud. Logo del Parque La Libertad" class="allies__icon">
     </section>
   </footer>
+
   <script src="js/menu.js"></script>
 </body>
 

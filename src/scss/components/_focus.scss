@@ -20,8 +20,8 @@
   padding: 0;
 
   @media (min-width: $breakpoint-lg) {
-    width: 90%;
     margin: 0 auto;
+    width: 90%;
   }
 }
 
@@ -32,14 +32,14 @@
 }
 
 .focus-gallery__item {
-  list-style: none;
-  padding: 0;
   height: 40vw;
+  list-style: none;
   margin: 1% auto;
   overflow: hidden;
-  width: 95%;
+  padding: 0;
   transform: scale(1);
   transition: 0.3s ease-in-out;
+  width: 95%;
 
   &:hover {
     transform: scale(1.07);

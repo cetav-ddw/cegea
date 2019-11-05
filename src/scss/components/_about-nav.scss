@@ -15,7 +15,7 @@
   padding: 0;
 
   @media (min-width: 1024px) {
-    justify-content: center;
+    justify-content: flex-end;
     margin: 0;
     width: 70%;
   }
@@ -25,18 +25,6 @@
   list-style: none;
   margin: 5px 0;
   width: 45%;
-  &:nth-child(4n) {
-    width: 20%;
-    @media (min-width: $breakpoint-sm) {
-      width: 12%;
-  }
-  @media (min-width: $breakpoint-md) {
-    width: 10%;
-  }
-  @media (min-width: $breakpoint-lg) {
-    width: 15%;
-  }
-}
 
   @media (min-width: 515px) {
     width: 25%;
@@ -66,9 +54,6 @@
 
   @media (min-width: 960px) {
     font-size: 1.125rem;
-    &:hover {
-      color: $orange-light;
-    }
   }
 }
 

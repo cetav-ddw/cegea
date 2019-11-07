@@ -1,3 +1,19 @@
+.titles {
+  color: $orange;
+  text-align: center;
+  
+  @media (min-width: $breakpoint-md) {
+    font-size: $h2-size;
+  }
+}
+
+.titles--font {
+  display: block;
+  font-family: $font-titles;
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
 .wrapper {
   margin: 30px auto;
 
@@ -7,20 +23,4 @@
     margin-top: 60px;
     max-width: 1440px;
   }
-}
-
-.titles {
-  color: $orange;
-  text-align: center;
-
-  @media (min-width: $breakpoint-md) {
-    font-size: $h2-size;
-  }
-}
-
-.titles--font {
-  display: block;
-  font-family: $font-titles;
-  margin-top: 5px;
-  margin-bottom: 35px;
 }

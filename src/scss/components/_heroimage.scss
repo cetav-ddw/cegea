@@ -1,14 +1,16 @@
 .hero_image {
   background-image: url('../../images/heroimage/laguna2x.jpg');
   background-size: cover;
-  height: 74vh;
+  display: flex;
+  height: auto;
+  justify-content: flex-end;
+  padding: 32px 0;
   width: 100%;
   
   @media (min-width: $breakpoint-md) {
-    height: 76vh;    
-  }  
+    padding: 40px 0; 
+  }
   @media (min-width: $breakpoint-lg) {
-    height: 80vh;
+    padding: 40px 0; 
   }
 }
-

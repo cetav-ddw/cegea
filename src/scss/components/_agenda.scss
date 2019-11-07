@@ -1,34 +1,27 @@
 .agenda {
+  padding: 0 1.5rem;
+}
+.agenda__container {
+  background: rgba(86, 146, 70, 0.849);
+  margin: 0 auto;
+  max-width: 460px;
+  padding-bottom: 23px;
+  padding-top: 17px;
   position: relative;
-  top: 3%;
+  width: 83%;
 
   @media (min-width: $breakpoint-md) {
+    margin: 0 36px;
+    width: 50%;
     &::after {
       background-color: $yellow;
       bottom: 1px;
       content: "";
       height: 100%;
-      left: -21px;
+      left: -30px;
       position: absolute;
       width: 5px;
-    }
-  }
-  @media (min-width: $breakpoint-lg) {
-    top: 7%;
-  }
-}
-
-.agenda__container {
-  background: rgba(86, 146, 70, 0.849);
-  margin: 0 auto;
-  max-width: 83%;
-  padding-bottom: 23px;
-  padding-top: 17px;
-
-  @media (min-width: $breakpoint-md) {
-    float: right;
-    margin: 0 36px;
-    width: 50%;  
+    }  
   }
   @media (min-width: $breakpoint-lg) {
     width: 34%;
@@ -40,8 +33,8 @@
 
 .agenda__item-title {
   color: $white;
-  margin: 6px 0;
-  margin-bottom: 11px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 .agenda__title {

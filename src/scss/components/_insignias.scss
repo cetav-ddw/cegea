@@ -25,7 +25,10 @@
 }
 
 .insignias__item {
+  display: flex;
   list-style: none;
+  width: 50%;
+  justify-content: center;
 
   @media (min-width: $breakpoint-md) {
     display: flex;

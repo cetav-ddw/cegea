@@ -1,0 +1,95 @@
+.cegea-offer{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.cegea-offer__descrip {
+  color: $white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+}
+
+.cegea-offer__descrip--green {
+  background-color: $green;
+}
+
+.cegea-offer__descrip--orange {
+  background-color: $orange;
+}
+
+.cegea-offer__descrip--yellow {
+  background-color: $yellow;
+}
+
+.cegea__img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90%;
+
+  @media (min-width: $breakpoint-sm) {
+    max-width: 75%;
+  }
+  @media (min-width: $breakpoint-md) {
+    max-width: 65%;
+  }
+}
+
+.cegea__img-item {
+  max-width: 100%;
+}
+
+.cegea-offer__item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 300px;
+  margin-bottom: 35px;
+  width: 90%;
+
+  @media (min-width: $breakpoint-sm) {
+    background-position: 20%;
+    height: 350px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 30%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    height: 400px;
+  }
+}
+
+.cegea-offer__item--education {
+  background-image: url(../../images/cegea/cegea__offer-education-1x.jpg);
+
+  @media (min-width: $breakpoint-lg) {
+    background-image: url(../../images/cegea/cegea__offer-education-2x.jpg);
+  }
+}
+
+.cegea-offer__item--experimentation {
+  background-image: url(../../images/cegea/cegea__offer-experimentation-1x.jpg);
+
+  @media (min-width: $breakpoint-lg) {
+    background-image: url(../../images/cegea/cegea__offer-experimentation-2x.jpg);
+  }
+}
+
+.cegea-offer__item--meetup {
+  background-image: url(../../images/cegea/cegea__offer-meetup-1x.jpg);
+
+  @media (min-width: $breakpoint-lg) {
+    background-image: url(../../images/cegea/cegea__offer-meetup-2x.jpg);
+  }
+}

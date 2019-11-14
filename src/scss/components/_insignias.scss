@@ -46,18 +46,3 @@
   }
 }
 
-.insignias__title {
-  color: $orange;
-  text-align: center;
-
-  @media (min-width: $breakpoint-md) {
-    font-size: $h2-size;
-  }
-}
-
-.insignias__title--font {
-  display: block;
-  font-family: $font-titles;
-  margin-top: 5px;
-  margin-bottom: 35px;
-}

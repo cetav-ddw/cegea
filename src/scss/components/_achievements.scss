@@ -1,0 +1,48 @@
+.achievements__description {
+  display: inline-block;
+  height: 180px;
+  margin: 0 auto; 
+  overflow: hidden;
+  width: 131px;
+}
+
+.achievements__descript--bird {
+  background: transparent url(../images/logros/aves1x.png) no-repeat;
+  background-size: contain;
+}
+
+.achievements__descript--tree {
+  background: transparent url(../images/logros/arbol1x.png) no-repeat;
+  background-size: contain;
+}
+
+.achievements__descript--volunteers {
+  background: transparent url(../images/logros/voluntario1x.png) no-repeat;
+  background-size: contain;
+}
+
+.achievements__item {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 45%;
+  
+  @media (min-width: $breakpoint-md) {
+    align-self: baseline;
+    width: 30%;
+  }   
+}
+
+.achievements__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0;
+ 
+  @media (min-width: 415px) {
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}

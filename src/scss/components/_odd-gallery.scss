@@ -27,9 +27,7 @@
   transition: 0.3s ease-in-out;
   width: 95%;
 
-  &:hover {
-    transform: scale(1.07);
-  }
+  
   &:last-child {
     @media (min-width: $breakpoint-sm) {
       width: 98%;
@@ -42,5 +40,8 @@
   }
   @media (min-width: $breakpoint-lg) {
     height: 20vw;
+  }
+  &:hover {
+    transform: scale(1.07);
   }
 }

@@ -1,0 +1,33 @@
+.descrip__text {
+  color: $dark-grey;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding-bottom: 25px;
+  width: 90%;
+
+  @media (min-width: $breakpoint-md) {
+    margin: 0px auto;
+    width: 100%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1.25rem;
+  }
+}
+
+.titles {
+  color: $orange;
+  text-align: center;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: $h2-size;
+  }
+}
+
+.titles--font {
+  display: block;
+  font-family: $font-titles;
+  margin-bottom: 35px;
+  margin-top: 5px;
+}

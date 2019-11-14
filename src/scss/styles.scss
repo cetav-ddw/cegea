@@ -2,16 +2,16 @@
 @import 'util/normalize';
 @import 'base';
 @import 'util/layout';
+@import 'patterns/text';
 @import 'patterns/buttons';
-@import 'components/branding';
-@import 'components/header';
-@import 'components/navigation';
 @import 'components/actvinfo';
 @import 'components/agenda';
-@import 'components/heroimage';
-@import 'components/description';
-@import 'components/insignias';
-@import 'components/projects';
+@import 'components/branding';
 @import 'components/footer';
-
-@import 'components/focus';
+@import 'components/header';
+@import 'components/heroimage';
+@import 'components/insignias';
+@import 'components/introduction';
+@import 'components/navigation';
+@import 'components/projects';
+@import 'components/odd-gallery';

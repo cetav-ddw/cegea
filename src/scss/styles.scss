@@ -1,9 +1,9 @@
 @import 'variables';
 @import 'util/normalize';
 @import 'base';
-@import 'util/layout';
 @import 'patterns/buttons';
 @import 'patterns/text';
+@import 'util/layout';
 @import 'components/achievements';
 @import 'components/actvinfo';
 @import 'components/agenda';
@@ -12,8 +12,9 @@
 @import 'components/footer';
 @import 'components/header';
 @import 'components/heroimage';
-@import 'components/insignias';
 @import 'components/impact';
+@import 'components/insignias';
 @import 'components/introduction';
 @import 'components/navigation';
 @import 'components/projects';
+@import 'components/odd-gallery';

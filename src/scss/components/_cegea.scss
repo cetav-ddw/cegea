@@ -38,10 +38,11 @@
   max-width: 90%;
 
   @media (min-width: $breakpoint-sm) {
-    max-width: 75%;
+    padding: 15px 0;
   }
   @media (min-width: $breakpoint-md) {
-    max-width: 65%;
+    max-width: 70%;
+    padding: 25px 0;
   }
 }
 
@@ -71,25 +72,25 @@
 }
 
 .cegea-offer__item--education {
-  background-image: url(../../images/cegea/cegea__offer-education-1x.jpg);
+  background-image: url(../../images/cegea/cegea-education.jpg);
 
   @media (min-width: $breakpoint-lg) {
-    background-image: url(../../images/cegea/cegea__offer-education-2x.jpg);
+    background-image: url(../../images/cegea/cegea-education-big.jpg);
   }
 }
 
 .cegea-offer__item--experimentation {
-  background-image: url(../../images/cegea/cegea__offer-experimentation-1x.jpg);
+  background-image: url(../../images/cegea/cegea-experimentation.jpg);
 
   @media (min-width: $breakpoint-lg) {
-    background-image: url(../../images/cegea/cegea__offer-experimentation-2x.jpg);
+    background-image: url(../../images/cegea/cegea-experimentation-big.jpg);
   }
 }
 
 .cegea-offer__item--meetup {
-  background-image: url(../../images/cegea/cegea__offer-meetup-1x.jpg);
+  background-image: url(../../images/cegea/cegea-meetup.jpg);
 
   @media (min-width: $breakpoint-lg) {
-    background-image: url(../../images/cegea/cegea__offer-meetup-2x.jpg);
+    background-image: url(../../images/cegea/cegea-meetup-big.jpg);
   }
 }

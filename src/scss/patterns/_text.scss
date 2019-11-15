@@ -1,0 +1,59 @@
+.descrip__text {
+  color: $dark-grey;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding-bottom: 25px;
+  width: 90%;
+
+  @media (min-width: $breakpoint-md) { 
+    margin: 0;
+    width: 100%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1.25rem;
+  }
+}
+
+.descrip__text--spacing {
+  padding-bottom: 0;
+}
+
+.subtitles {
+  color: $green;
+  font-size: 1.375rem;
+  margin: 22px auto;
+  width: 90%;
+
+  @media (min-width: $breakpoint-sm) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 100%;
+  }
+}
+
+.titles {
+  color: $orange;
+  text-align: center;
+  
+  @media (min-width: $breakpoint-md) {
+    font-size: $h2-size;
+  }
+}
+
+.titles--bold {
+  display: block;
+  font-family: $font-titles;
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+.titles--single {
+  color: $orange;
+  font-family: $font-titles;
+  font-size: $h2-size;
+  margin-bottom: 35px;
+  text-align: center;
+}

@@ -1,12 +1,9 @@
-.agenda {
-  padding: 0 1.5rem;
-}
 .agenda__container {
   background: rgba(86, 146, 70, 0.849);
   margin: 0 auto;
   max-width: 460px;
-  padding-bottom: 23px;
-  padding-top: 17px;
+  padding-bottom: 30px;
+  padding-top: 30px;
   position: relative;
   width: 83%;
 
@@ -45,4 +42,12 @@
 .agenda__title--font {
   display: block;
   font-family: $font-titles;
+}
+
+.agenda__wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
 }

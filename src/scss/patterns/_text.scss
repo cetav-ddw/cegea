@@ -6,9 +6,9 @@
   max-width: 1140px;
   padding-bottom: 25px;
   width: 90%;
-  
-  @media (min-width: $breakpoint-md) {
-    margin: 0 auto;
+
+  @media (min-width: $breakpoint-md) { 
+    margin: 0;
     width: 100%;
   }
   @media (min-width: $breakpoint-lg) {
@@ -37,7 +37,7 @@
 .titles {
   color: $orange;
   text-align: center;
-
+  
   @media (min-width: $breakpoint-md) {
     font-size: $h2-size;
   }

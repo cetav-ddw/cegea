@@ -1,0 +1,70 @@
+.env-locations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+  margin: 0 auto;
+  max-width: 90%;
+  padding: 0;
+  
+  @media (min-width: 559px) {
+    padding: 15px 0;
+  } 
+  @media (min-width: $breakpoint-lg) {
+    padding: 25px 0;
+  }
+}
+
+.env-locations__item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 50%;
+
+  @media (min-width: 560px) {
+    width: auto;
+  }
+}
+
+.locations__icon {
+  color: $dark-grey;
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  position: relative;
+  text-align: center;
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1.375rem;
+  }
+}
+
+.locations__icon::before {
+  background-image: url(../images/icons/env-management/location.png);
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  height: 64px;
+  position: relative;
+  width: 64px;
+}
+
+.insignia-container {
+  display: flex;
+  justify-content: center;
+  max-width: 1440px;
+
+  @media (min-width: $breakpoint-lg) {
+    margin: 15px 0;
+  }
+}
+
+.insignia__item {
+  margin: 0;
+  width: 145px;
+
+  @media (min-width: $breakpoint-lg) {
+    width: 155px;
+  }
+}

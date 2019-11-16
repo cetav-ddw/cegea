@@ -1,26 +1,10 @@
-.titles {
-  color: $orange;
-  text-align: center;
-  
-  @media (min-width: $breakpoint-md) {
-    font-size: $h2-size;
-  }
-}
-
-.titles--font {
-  display: block;
-  font-family: $font-titles;
-  margin-bottom: 35px;
-  margin-top: 5px;
-}
-
 .wrapper {
   margin: 30px auto;
 
   @media (min-width: $breakpoint-md) {
-    width: 90%;
     margin-bottom: 60px;
     margin-top: 60px;
     max-width: 1440px;
+    width: 90%;
   }
 }

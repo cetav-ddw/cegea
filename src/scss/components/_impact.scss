@@ -13,19 +13,6 @@
   }
 }
 
-.impact__description {
-  color: $dark-grey;
-  font-size: 1.125rem;
-  font-weight: 600;
-  margin: 0 auto;
-  max-width: 85%;
-
-  @media (min-width: $breakpoint-md) {
-    font-size: 1.25rem;
-    max-width: 100%;
-  }
-}
-
 .impact__item--education {
   background-image: url(../images/impact/impact-3.jpg);
 }

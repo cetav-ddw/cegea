@@ -30,18 +30,12 @@
   transform: scale(1);
   transition: 0.3s ease-in-out;
 
-  &:hover {
-    @media (min-width: $breakpoint-md) {
-      transform: scale(1.07);
-    }
-  }
   &:first-child {
     width: 100%;
     @media (min-width: $breakpoint-md) {
       width: 55%;
     }
   }
-  
   &:nth-child(2n) {
     width: 100%;
     @media (min-width: $breakpoint-md) {

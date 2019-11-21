@@ -1,0 +1,198 @@
+.feats {
+  margin: 0 auto;
+  max-width: 1400px;
+  padding: 30px 15px;
+  position: relative;
+
+  h2 {
+    margin: 60px 0;
+  }
+}
+
+.feats__circle {
+  border-radius: 100%;
+  color: $white;
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+  height: 25px;
+  padding: 15px;
+  text-align: center;
+  width: 25px;
+}
+
+.feats__wrapper-feats {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+  }
+}
+
+.feats__line  {
+  height: 100%;
+  position: absolute;
+  right: 10px;
+  width: 20px;
+
+  @media (min-width: $breakpoint-md) {
+    display: block;
+    height: 800px;
+    position: relative;
+    width: 20px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 20px;
+  }
+}
+
+.circle-year {
+  font-size: 11px;
+  height: 50px;
+  position: relative;
+  right: 15px;
+  top: 45%;
+  width: 50px;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 15px;
+    height: 70px;
+    right: 24px;
+    width: 70px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 15px;
+    right: 24px;
+  }
+}
+
+.main-circle {
+  height: 50px;
+  position: relative;
+  right: 15px;
+  top: -1%;
+  width: 50px;
+
+  @media (min-width: $breakpoint-md) {
+    height: 70px;
+    right: 24px;
+    width: 70px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    right: 24px;
+  }
+}
+
+.end-circle {
+  height: 50px;
+  position: relative;
+  right: 15px;
+  top: 85%;
+  width: 50px;
+
+  @media (min-width: $breakpoint-md) {
+    height: 70px;
+    right: 24px;
+    width: 70px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    right: 24px;
+  }
+}
+
+.line-60s {
+  background: $green;
+
+  span {
+    background: $green;
+  }
+}
+
+.feats__card {
+  background: $white;
+  box-shadow: 10px 4px 15px rgba(0, 0, 0, 0.25);
+  margin: 15px 0;
+  width: 70%;
+
+  @media (min-width: $breakpoint-md) {
+    position: absolute;
+    width: 270px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 350px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  p {
+    padding: 20px;
+  }
+}
+
+.first {
+
+  @media (min-width: $breakpoint-md) {
+    left: 20px;
+    top: 80px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    left: 135px;
+  }
+}
+
+.second {
+
+  @media (min-width: $breakpoint-md) {
+    bottom: 80px;
+    right: 20px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    right: 135px;
+  }
+}
+
+.line-0 {
+  background: $yellow-dark;
+
+  span {
+    background: $yellow-dark;
+  }
+}
+
+.line-10 {
+  background: $yellow;
+
+  span {
+    background: $yellow;
+  }  
+}
+
+.line-16 {
+  background: $orange;
+
+  span {
+    background: $orange;
+  }
+}
+
+.line-19 {
+  background:  #DC8605;
+
+  span {
+    background:  #DC8605;
+  }
+}

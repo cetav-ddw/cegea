@@ -1,8 +1,10 @@
 .feats {
-  margin: 0 auto;
-  max-width: 1400px;
   padding: 30px 15px;
   position: relative;
+
+  @media (min-width: $breakpoint-md) {
+    width: 95%;
+  }
 
   h2 {
     margin: 60px 0;
@@ -13,7 +15,7 @@
   border-radius: 100%;
   color: $white;
   display: block;
-  font-size: 12px;
+  font-size: $text-size;
   font-weight: bold;
   height: 25px;
   padding: 15px;
@@ -53,24 +55,26 @@
 }
 
 .circle-year {
-  font-size: 11px;
-  height: 50px;
+  font-size: 1rem;
+  height: 65px;
   position: relative;
-  right: 15px;
+  right: 22px;
   top: 45%;
-  width: 50px;
+  width: 65px;
 
   @media (min-width: $breakpoint-md) {
-    font-size: 15px;
     height: 70px;
     right: 24px;
     width: 70px;
   }
 
   @media (min-width: $breakpoint-lg) {
-    font-size: 15px;
     right: 24px;
   }
+}
+
+.circle-textcenter {
+  padding-top: 25px;
 }
 
 .main-circle {
@@ -119,7 +123,7 @@
 
 .feats__card {
   background: $white;
-  box-shadow: 10px 4px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 3px 5px 30px rgba(0, 0, 0, 0.25);
   margin: 15px 0;
   width: 70%;
 
@@ -138,14 +142,19 @@
 
   p {
     padding: 20px;
+    line-height: 20px;
+
+    @media (min-width: $breakpoint-md) {
+      line-height: 30px;
+    }
   }
 }
 
-.first {
+.feats__card--first {
 
   @media (min-width: $breakpoint-md) {
     left: 20px;
-    top: 80px;
+    top: 60px;
   }
 
   @media (min-width: $breakpoint-lg) {
@@ -153,10 +162,10 @@
   }
 }
 
-.second {
+.feats__card--second {
 
   @media (min-width: $breakpoint-md) {
-    bottom: 80px;
+    bottom: 60px;
     right: 20px;
   }
 

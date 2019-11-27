@@ -1,7 +1,15 @@
 .main-actions__cards {
+  margin: 0 auto;
   position: relative;
   width: 100%;
-  margin: 0 auto;
+
+  @media (min-width: $breakpoint-md) {
+    width: 45%;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    width: 30%;
+  }
 }
 
 .main-actions__circle {
@@ -11,7 +19,7 @@
   margin: auto;
   padding: 20px;
   position: relative;
-  top: 60px;
+  top: 50px;
   width: 150px;
 
   img {
@@ -20,14 +28,18 @@
 }
 
 .main-actions__type {
+  align-items: center;
   background: $dark-grey;
   box-shadow: 10px 4px 35px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 170px;
+  justify-content: center;
   text-align: center;
   width: 100%;
-  height: 170px;
-  align-items: center;
   
   h2 {
     color: white;
+    margin: 0;
+    width: 80%;
   }
 }

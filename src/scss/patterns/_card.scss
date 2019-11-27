@@ -1,0 +1,33 @@
+.main-actions__cards {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-actions__circle {
+  background: gray;
+  border-radius: 50%;
+  box-shadow: 10px 4px 35px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  top: 60px;
+  width: 150px;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.main-actions__type {
+  background: $dark-grey;
+  box-shadow: 10px 4px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  width: 100%;
+  height: 170px;
+  align-items: center;
+  
+  h2 {
+    color: white;
+  }
+}

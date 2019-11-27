@@ -1,0 +1,35 @@
+.main-actions {
+  padding: 30px 10px;
+}
+
+.main-actions__wrapper-cards {
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.main-actions__title {
+  color: $green;
+}
+
+.main-actions__circle--sprout,
+.main-actions__type--sprout {
+  background: #82462C;
+}
+
+.main-actions__circle--agronomy,
+.main-actions__type--agronomy {
+  background: $green;
+}
+
+.main-actions__circle--outline,
+.main-actions__type--outline {
+  background: $yellow-dark;
+}
+
+.main-actions__circle--bird,
+.main-actions__type--bird {
+  background: $orange-dark;
+}

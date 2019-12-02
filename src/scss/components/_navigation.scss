@@ -22,16 +22,6 @@
     position: absolute;
     right: 65px;
     width: 15px;
-    /*
-    background: transparent url(../images/icons/menu/menu.png) no-repeat;
-    background-size: contain;
-    content: '';
-    display: block;
-    height: 20px;
-    position: absolute;
-    right: 62px;
-    width: 20px;
-    */ 
   }
   .menu-open & {
     &:before {
@@ -131,7 +121,7 @@
   @media (min-width: 850px) {
     width: 77px;
   }
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-xl) {
     width: auto;
   }
 }

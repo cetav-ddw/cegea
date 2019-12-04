@@ -1,49 +1,10 @@
-.descrip__text {
-  color: $dark-grey;
-  margin: 0 auto;
-  padding-top: 25px;
-
-  @media (min-width: $breakpoint-lg) {
-    padding-top: 40px;
-  }
-}
-
-.descrip__text--bolt {
-  font-size: 1.25rem;
-  font-weight: 600;
-
-  @media (min-width: $breakpoint-md) {
-    font-size: 1.375rem;
-    max-width: 1280px;
-  }
-  @media (min-width: $breakpoint-lg) {
-    font-size: 1.5rem;
-  }
-}
-
-.titles {
-  color: $orange;
-  text-align: center;
-  
-  @media (min-width: $breakpoint-md) {
-    font-size: $h2-size;
-  }
-}
-
-.titles--font {
-  display: block;
-  font-family: $font-titles;
-  margin-bottom: 35px;
-  margin-top: 5px;
-}
-
 .wrapper {
   margin: 30px auto;
 
   @media (min-width: $breakpoint-md) {
-    width: 90%;
     margin-bottom: 60px;
     margin-top: 60px;
     max-width: 1440px;
+    width: 90%;
   }
 }

@@ -8,28 +8,45 @@
     display: flex;
     justify-content: space-around;
   }
+
+  @media (min-width: $breakpoint-xl) {
+    margin: auto;
+    width: 1100px;
+  }
 }
 
 .main-actions__title {
   color: $green;
 }
 
-.main-actions__circle--sprout,
-.main-actions__type--sprout {
-  background: #82462C;
+.main-actions__circle--sprout {
+  background: $brown;
 }
 
-.main-actions__circle--agronomy,
-.main-actions__type--agronomy {
+.main-actions__type--sprout {
+  background: $brown-light;
+}
+
+.main-actions__circle--agronomy {
   background: $green;
 }
 
-.main-actions__circle--outline,
-.main-actions__type--outline {
-  background: $yellow-dark;
+.main-actions__type--agronomy {
+  background: $green-lighter;
 }
 
-.main-actions__circle--bird,
+.main-actions__circle--outline {
+  background:  $paleyellow; 
+}
+
+.main-actions__type--outline {
+  background: $yellow-light;
+}
+
+.main-actions__circle--bird {
+  background: $orange;
+}
+
 .main-actions__type--bird {
-  background: $orange-dark;
+  background: $paleorange;
 }

@@ -10,7 +10,7 @@
   @media (min-width: $breakpoint-md) {
     margin: 0 36px;
     width: 50%;
-    
+
     &::after {
       background-color: $yellow;
       bottom: 1px;
@@ -46,9 +46,9 @@
 }
 
 .agenda__wrapper {
+  display: flex;
+  justify-content: flex-end;
   margin: 0 auto;
   max-width: 1440px;
   width: 90%;
-  display: flex;
-  justify-content: flex-end;
 }

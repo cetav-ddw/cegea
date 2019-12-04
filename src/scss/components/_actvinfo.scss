@@ -1,11 +1,8 @@
-.date__container {
-  background: $white;
-  display: flex;
-  font-family: $font-titles;
-  font-size: 1.12rem;
-  font-weight: bold;
-  height: 32px;
-  justify-content: center;
+.activity__date {
+  border:2px solid #666;
+  height: 77px;
+  margin-right: 16px;
+  width: 58px;
 }
 
 .activity__day {
@@ -13,14 +10,7 @@
   color: $white;
   font-size: $h3-size;
   height: 41px;
-}
-
-.activity__date {
-  border:2px solid #666;
-  height: 77px;
-  margin-right: 16px;
-  width: 58px;
-}
+}  
 
 .activity__description {
   max-width: 82%;
@@ -32,6 +22,16 @@
   list-style: none;
   margin: 26px 0px;
 }
+
+.date__container {
+  background: $white;
+  display: flex;
+  font-family: $font-titles;
+  font-size: 1.12rem;
+  font-weight: bold;
+  height: 32px;
+  justify-content: center;
+}  
 
 .space-top {
   margin-top: 5px;

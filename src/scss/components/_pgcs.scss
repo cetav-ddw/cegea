@@ -1,0 +1,43 @@
+.pgcs-offer{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+}
+
+.descrip__container{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: $orange-light;
+    max-width: 85%;
+    box-shadow: 10px 4px 35px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 14px 0;
+    margin: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.pgcs-offer__descrip{
+    margin: 0;
+    align-self: center;
+}
+
+.pgcs-offer__img{
+    max-width: 85%;
+}
+
+.pgcs-offer__arrow{
+    display: block;
+    width: 7%;
+    margin: 10px;
+}
+
+.pgcs-offer__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -3,33 +3,10 @@ footer[role="contentinfo"] {
   padding: 24px 0;
 }
 
-.allies__container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  margin-top: 35px;
-
-  @media (min-width: 530px) {
-    text-align: end;
-    justify-content: flex-end;
-    margin-top: 0;
-  }
-}
-
-.allies__icon {
-  width: 175px;
-}
-
-.allies__description {
-  font-size: 10px;
-  width: 100%;
-  text-align: start;
-  margin-bottom: 0;
-
-  @media (min-width: 530px) {
-    text-align: end;
-  }
-  
+.footer__item {
+  font-family: $font-default;
+  font-size: 1.125rem;
+  list-style: none;
 }
 
 .contact__container {
@@ -51,7 +28,7 @@ footer[role="contentinfo"] {
   }
 }
 
-.contact__link {
+.footer__link {
   color: $white;
   cursor: pointer;
 

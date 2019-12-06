@@ -14,7 +14,7 @@
     display: none;
   }
   &:before {
-    background: transparent url("../images/icons/menu/menu.svg") no-repeat;
+    background: transparent url("../images/icons/menu/menu.png") no-repeat;
     background-size: cover;
     content: '';
     display: block;
@@ -25,7 +25,7 @@
   }
   .menu-open & {
     &:before {
-      background-image: url("../images/icons/menu/menu-closed.svg");
+      background-image: url("../images/icons/menu/menu-closed.png");
     }
   }
 }
@@ -121,7 +121,7 @@
   @media (min-width: 850px) {
     width: 77px;
   }
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: $breakpoint-xl) {
     width: auto;
   }
 }

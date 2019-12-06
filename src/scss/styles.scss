@@ -3,12 +3,14 @@
 @import 'base';
 @import 'patterns/buttons';
 @import 'patterns/text';
+@import 'patterns/card';
 @import 'util/layout';
 @import 'components/achievements';
 @import 'components/actvinfo';
 @import 'components/agenda';
 @import 'components/branding';
 @import 'components/cegea';
+@import 'components/contact';
 @import 'components/env-management';
 @import 'components/footer';
 @import 'components/header';
@@ -19,3 +21,5 @@
 @import 'components/navigation';
 @import 'components/projects';
 @import 'components/odd-gallery';
+@import 'components/feats';
+@import 'components/actions';

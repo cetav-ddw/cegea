@@ -27,21 +27,12 @@
   }
 }
 
-.scroll-down {
-  animation: scrolling 2s infinite;
-}
-
-.scroll__icon {
-  width: 25px;
-
-  @media (min-width: $breakpoint-md) {
-    width: 28px;
-  }
-}
-
 .scroll__circle--big {
+  align-items: center;
+  display: flex;
   height: 61px;
   width: 61px;
+  justify-items: center;
 
   @media (min-width: $breakpoint-md) {
     height: 75px;
@@ -60,6 +51,19 @@
     width: 55px;
   }
 }
+
+.scroll-down {
+  animation: scrolling 2s infinite;
+}
+
+.scroll__icon {
+  width: 25px;
+
+  @media (min-width: $breakpoint-md) {
+    width: 28px;
+  }
+}
+
 
 @keyframes scrolling {
 	50% {

@@ -3,6 +3,13 @@ const eslint = require('gulp-eslint');
 const connect = require('gulp-connect');
 const open = require('gulp-open');
 const sass = require('gulp-sass');
+const clean = require('gulp-rimraf');
+const filesToMove = [
+  'src/css/*.css',
+  'src/js/*.js',
+  'src/images/**/**.*',
+  'src/**.html'
+  ];
 
 sass.compiler = require('node-sass');
 
@@ -56,3 +63,14 @@ gulp.task('watch', () => {
 });
 
 gulp.task('start', ['connect', 'open', 'lint', 'watch']);
+
+gulp.task('clean', [], function() {
+  console.log("Clean all files in dist folder");
+  return gulp.src("dist/**/*.*", { read: false }).pipe(clean());
+});
+
+gulp.task('build', ['clean', 'sass', 'lint'], function() {
+  console.log("Moving all files and folders to dist/");
+  gulp.src(filesToMove, { base: 'src/' })
+    .pipe(gulp.dest('dist'));
+});

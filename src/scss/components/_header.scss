@@ -7,9 +7,6 @@ header[role="banner"] {
     height: 100px;
   }
   @media (min-width: $breakpoint-lg) {
-    height: 115px;
-  }
-  @media (min-width: $breakpoint-xl) {
     height: 95px;
   }
 }
@@ -31,12 +28,10 @@ header[role="banner"] {
   margin: 0 auto;
 
   @media (min-width: $breakpoint-lg) {
-    padding: 10px 0;
     width: 90%;
   }
   @media (min-width: $breakpoint-xl) {
     max-width: 1440px;
-    padding: 0;
     width: 85%;
   }
 }

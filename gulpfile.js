@@ -35,7 +35,7 @@ gulp.task('connect', () => {
 
 gulp.task('open', () => {
   gulp.src(__filename)
-    .pipe(open({ uri: 'http://localhost:3000/' }));
+    .pipe(open({ uri: 'http://localhost:4040/' }));
 });
 
 gulp.task('reload', () => {

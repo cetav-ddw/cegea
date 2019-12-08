@@ -1,5 +1,5 @@
 .brand {
-  background: transparent url("../../images/logo/logo.png") no-repeat;
+  background: transparent url("../images/logo/logo.png") no-repeat;
   background-size: contain;
   content: '';
   display: block;
@@ -11,7 +11,7 @@
     margin-top: 1rem;
   }
   @media (min-width: 850px) {
-    background-image: url("../../images/logo/logo2x.png")  no-repeat;
+    background-image: url("../images/logo/logo2x.png")  no-repeat;
     background-position: center center;
     background-size: 140px;
     margin-left: 0;

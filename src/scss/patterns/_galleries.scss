@@ -1,0 +1,32 @@
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+    width: 100%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    justify-content: space-between;
+  }
+}
+
+.gallery__item {
+  align-self: center;
+  width: 100%;
+
+  @media (min-width: $breakpoint-md) {
+    width: 50%;
+  }
+}
+
+.gallery__item--two-columns {
+  padding: 15px 0;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 0 15px;
+  }
+}

@@ -1,0 +1,18 @@
+.standard-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.standard-list__item {
+  align-items: center;
+  display: flex;
+}
+
+.standard-list__item::before {
+  color: $green; 
+  content: "\2022  ";
+  font-size: 3rem;
+  margin-right: 15px;
+  text-align: center;
+}

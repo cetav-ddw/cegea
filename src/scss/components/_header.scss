@@ -1,7 +1,18 @@
 header[role="banner"] {
   background-color: $green-light;
-  height: 210px;
+  height: 127px;
   padding: 0;
+
+  @media (min-width: $breakpoint-md) {
+    height: 143px;
+  }
+  @media (min-width: $breakpoint-lg) {
+    height: 95px;
+  }
+}
+
+#has-nav-section {
+  height: 210px;
 
   @media (min-width: $breakpoint-md) {
     height: 205px;

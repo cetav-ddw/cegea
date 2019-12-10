@@ -4,19 +4,21 @@ footer[role="contentinfo"] {
 }
 
 .allies__container {
-  align-content: flex-end;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  margin-top: 35px;
   width: 100%;
 
   @media (min-width: 530px) {
+    align-content: flex-end;
+    margin-top: 0px;
+    justify-content: flex-end;
     width: 40%;
   }
 }
 
 .allies__description {
-  font-size: 0.79rem;
+  font-size: 0.75rem;
   margin-bottom: 0;
   margin-top: 3px;
 }
@@ -75,17 +77,16 @@ footer[role="contentinfo"] {
 .footer__link {
   color: $white;
   cursor: pointer;
+  font-size: 0.975rem;
+  text-decoration: none;
 
+  &:hover {
+    text-decoration: underline;
+  }
   &:visited {
     color: $yellow-light;
   }
 }
-
-/* .footer__item {
-  width: 100%;
-
-
-}*/
 
 .footer__title {
   font-family: $font-titles;

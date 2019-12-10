@@ -3,8 +3,13 @@
 }
 
 .activity__day {
+  align-items: center;
   background: #333;
   color: $white;
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  width: 100%;
 }  
 
 .activity__description {
@@ -19,14 +24,23 @@
 }
 
 .activity__month {
+  align-items: center;
   background: $white;
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  width: 100%;
 }
 
 .date__container {
-  border:2px solid #666;
+  border: 2px solid #666;
+  font-family: $font-titles;
+  font-size: 1.12rem;
+  font-weight: bold;
+  height: 90px;
   width: 60px;
 }  
 
 .space-top {
   margin-top: 5px;
-} 
+}

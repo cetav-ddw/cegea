@@ -1,0 +1,52 @@
+.main-actions {
+  padding: 30px 10px;
+}
+
+.main-actions__wrapper-cards {
+
+  @media (min-width: $breakpoint-md) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    margin: auto;
+    width: 1100px;
+  }
+}
+
+.main-actions__title {
+  color: $green;
+}
+
+.main-actions__circle--sprout {
+  background: $brown;
+}
+
+.main-actions__type--sprout {
+  background: $brown-light;
+}
+
+.main-actions__circle--agronomy {
+  background: $green;
+}
+
+.main-actions__type--agronomy {
+  background: $green-lighter;
+}
+
+.main-actions__circle--outline {
+  background:  $paleyellow; 
+}
+
+.main-actions__type--outline {
+  background: $yellow-light;
+}
+
+.main-actions__circle--bird {
+  background: $orange;
+}
+
+.main-actions__type--bird {
+  background: $paleorange;
+}

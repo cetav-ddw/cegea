@@ -1,5 +1,5 @@
 .feats {
-  padding: 30px 15px;
+  padding: 30px 15px 80px;
   position: relative;
 
   @media (min-width: $breakpoint-md) {
@@ -47,6 +47,7 @@
     height: 800px;
     position: relative;
     width: 20px;
+    margin-left: 20px;
   }
 
   @media (min-width: $breakpoint-lg) {
@@ -74,7 +75,7 @@
 }
 
 .circle-textcenter {
-  padding-top: 25px;
+  padding-top: 22px;
 }
 
 .main-circle {
@@ -124,12 +125,13 @@
 .feats__card {
   background: $white;
   box-shadow: 3px 5px 30px rgba(0, 0, 0, 0.25);
-  margin: 15px 0;
+  margin: 15px;
   width: 70%;
 
   @media (min-width: $breakpoint-md) {
     position: absolute;
     width: 270px;
+    margin: 15px 0;
   }
 
   @media (min-width: $breakpoint-lg) {
@@ -141,7 +143,7 @@
   }
 
   p {
-    padding: 20px;
+    padding: 15px;
     line-height: 20px;
 
     @media (min-width: $breakpoint-md) {
@@ -153,11 +155,15 @@
 .feats__card--first {
 
   @media (min-width: $breakpoint-md) {
-    left: 20px;
+    left: 0px;
     top: 60px;
   }
 
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: 1200px) {
+    left: 90px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
     left: 135px;
   }
 }
@@ -166,10 +172,14 @@
 
   @media (min-width: $breakpoint-md) {
     bottom: 60px;
-    right: 20px;
+    right: 0px;
   }
 
-  @media (min-width: $breakpoint-lg) {
+  @media (min-width: 1200px) {
+    right: 90px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
     right: 135px;
   }
 }

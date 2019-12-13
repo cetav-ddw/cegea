@@ -7,13 +7,13 @@
 
 .btn--moreinfo {
   background: $yellow;
-  border-radius: 6px;
+  border-radius: 5px;
   color: $white;
+  display: inline-block;
   font-size: 14px;
   font-weight: bold;
-  padding: 6px;
+  padding: 6px 10px;
   text-decoration: none; 
-
 }
 
 .btn--donate {

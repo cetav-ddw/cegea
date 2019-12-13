@@ -11,49 +11,51 @@
 
 <body class="">
   <header role="banner">
-    <div class="header__wrapper">
-      <h1 class="brand">
-        <span class="sr-only">Dimensión ambiental - Parque La Libertad</span>
-      </h1>
-      <button type="button" id="btn-menu" class="btn-menu">Menú</button>
-      <nav role="navigation" class="main-nav js-main-nav">
-        <ul id="cont-menu" class="main-nav__cont">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Inicio</a>
-          </li>
-          <li class="main-nav__item main-nav__item--about">
-            <a class="main-nav__link" href="about.html">Acerca de nosotros</a>
-          </li>
-          <li id="cont-sub-menu" class="main-nav__item main-nav__item--programs">
-            <a class="main-nav__link" href="#">Programas</a>
-            <ul id="sub-menu" class="sub-nav">
-              <li class="sub-nav__item">
-                <a class="sub-nav__link" href="environmental-management.html">Gestión ambiental</a>
-              </li>
-              <li class="sub-nav__item">
-                <a class="sub-nav__link" href="peds.html">PEDS</a>
-              </li>
-              <li class="sub-nav__item">
-                <a class="sub-nav__link" href="pgcs.html">PGCS</a>
-              </li>
-              <li class="sub-nav__item">
-                <a class="sub-nav__link" href="technical-formation.html">Formación técnica</a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="contact.html">Contacto</a>
-          </li>
-        </ul>
-        <ul class="btn-nav__cont">
-          <li class="btn-nav__item">
-            <a class="btn btn--volunteer" href="volunteering.html">Voluntariado</a>
-          </li>
-          <li class="btn-nav__item">
-            <a class="btn btn--donate" href="donate.html">Donar</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="position-header">
+      <div class="header__wrapper">
+        <h1 class="brand">
+          <span class="sr-only">Dimensión ambiental - Parque La Libertad</span>
+        </h1>
+        <button type="button" id="btn-menu" class="btn-menu">Menú</button>
+        <nav role="navigation" class="main-nav js-main-nav">
+          <ul id="cont-menu" class="main-nav__cont">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Inicio</a>
+            </li>
+            <li class="main-nav__item main-nav__item--about">
+              <a class="main-nav__link" href="about.html">Acerca de nosotros</a>
+            </li>
+            <li id="cont-sub-menu" class="main-nav__item main-nav__item--programs">
+              <a class="main-nav__link" href="#">Programas</a>
+              <ul id="sub-menu" class="sub-nav">
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link" href="environmental-management.html">Gestión ambiental</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link" href="peds.html">PEDS</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link" href="pgcs.html">PGCS</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link" href="technical-formation.html">Formación técnica</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+          <ul class="btn-nav__cont">
+            <li class="btn-nav__item">
+              <a class="btn btn--volunteer" href="volunteering.html">Voluntariado</a>
+            </li>
+            <li class="btn-nav__item">
+              <a class="btn btn--donate" href="donate.html">Donar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -66,8 +68,10 @@
           </h2>
           <li class="activity__item">
             <div class="activity__date">
-              <time class="activity__month date__container" datetime="2019-08">Agost</time>
-              <time class="activity__day date__container" datetime="2020-08-13">13</time>
+              <div class="date__container">
+                <time class="activity__month" datetime="2019-08">Agost</time>
+                <time class="activity__day" datetime="2020-08-13">13</time>
+              </div>
             </div>
             <div class="activity__description">
               <h3 class="agenda__item-title">Club Eco-manualidades</h3>
@@ -76,8 +80,10 @@
           </li>
           <li class="activity__item">
             <div class="activity__date">
-              <time class="activity__month date__container" datetime="2019-08">Oct</time>
-              <time class="activity__day date__container" datetime="2020-08-13">20</time>
+              <div class="date__container">
+                <time class="activity__month" datetime="2019-08">Oct</time>
+                <time class="activity__day" datetime="2020-08-13">20</time>
+              </div>
             </div>
             <div class="activity__description">
               <h3 class="agenda__item-title">Club mensual de jardinería</h3>
@@ -86,8 +92,10 @@
           </li>
           <li class="activity__item">
             <div class="activity__date">
-              <time class="activity__month date__container" datetime="2019-08">Nov</time>
-              <time class="activity__day date__container" datetime="2020-08-13">05</time>
+              <div class="date__container">
+                <time class="activity__month" datetime="2019-08">Nov</time>
+                <time class="activity__day" datetime="2020-08-13">05</time>
+              </div>
             </div>
             <div class="activity__description">
               <h3 class="agenda__item-title">Siembra mensual de árboles</h3>
@@ -123,7 +131,7 @@
             <source media="(min-width: 1024px)" srcset="./images/proyectos/laptop-conservacion.jpg">
             <source media="(min-width: 768px)" srcset="./images/proyectos/tablet-conservacion.jpg">
             <source media="(min-width: 0px)" srcset="./images/proyectos/mobile-conservacion.jpg">
-            <img src="./images/proyectos/laptop-conservacion-jardines.jpg" alt="Fotografía de nuestros programa de conservación de jardines del parque">
+            <img src="./images/proyectos/laptop-conservacion.jpg" alt="Fotografía de nuestros programa de conservación de jardines del parque">
           </picture>
           <h3 class="projects__title-item">Conservación de jardines</h3>
         </a>
@@ -223,7 +231,7 @@
 
   <footer role="contentinfo">
     <section class="footer__wrapper">
-      <section class="contact">
+      <section class="footer__contact">
         <h3 class="footer__title">Contacto</h3>
         <ul class="contact__container">
           <li class="footer__item">
@@ -244,7 +252,7 @@
         </ul>
       </section>
       
-      <section class="footer__item allies__container">
+      <section class="allies__container">
         <img src="images/icons/footer/mcj-parque.png"
           alt="Logo del Ministerio de Cultura y Juventud. Logo del Parque La Libertad" class="allies__icon">
         <p class="allies__description">

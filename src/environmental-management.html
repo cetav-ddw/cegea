@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,52 +7,53 @@
   <title>Dimensión Ambiental - Gestión Ambiental</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
   <header role="banner">
-    <div class="header__wrapper">
-      <a class="brand" href="index.html">
-        <span class="sr-only">Dimensión ambiental - Parque La Libertad</span>
-      </a>
-      <button type="button" id="btn-menu" class="btn-menu">Menu</button>
-      <nav role="navigation" class="main-nav js-main-nav">
-        <ul id="cont-menu" class="main-nav__cont">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html">Inicio</a>
-          </li>
-          <li class="main-nav__item main-nav__item--about">
-            <a class="main-nav__link" href="about.html">Acerca de nosotros</a>
-          </li>
-          <li id="cont-sub-menu" class="main-nav__item main-nav__item--programs">
-            <a class="main-nav__link" href="#">Programas</a>
-            <ul id="sub-menu" class="sub-nav">
-              <li class="sub-nav__item">
-                <a class="sub-nav__link" href="environmental-management.html">Gestión ambiental</a>
-              </li>
-              <li class="sub-nav__item">
-                <a class="sub-nav__link" href="peds.html">PEDS</a>
-              </li>
-              <li class="sub-nav__item">
-                <a class="sub-nav__link" href="pgcs.html">PGCS</a>
-              </li>
-              <li class="sub-nav__item">
-                <a class="sub-nav__link" href="technical-formation.html">Formación técnica</a>
-              </li>
-            </ul>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="contact.html">Contacto</a>
-          </li>
-        </ul>
-        <ul class="btn-nav__cont">
-          <li class="btn-nav__item">
-            <a class="btn btn--volunteer" href="volunteering.html">Voluntariado</a>
-          </li>
-          <li class="btn-nav__item">
-            <a class="btn btn--donate" href="donate.html">Donar</a>
-          </li>
-        </ul>
-      </nav>
+    <div class="position-header">
+      <div class="header__wrapper">
+        <a class="brand" href="index.html">
+          <span class="sr-only">Dimensión ambiental - Parque La Libertad</span>
+        </a>
+        <button type="button" id="btn-menu" class="btn-menu">Menu</button>
+        <nav role="navigation" class="main-nav js-main-nav">
+          <ul id="cont-menu" class="main-nav__cont">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Inicio</a>
+            </li>
+            <li class="main-nav__item main-nav__item--about">
+              <a class="main-nav__link" href="about.html">Acerca de nosotros</a>
+            </li>
+            <li id="cont-sub-menu" class="main-nav__item main-nav__item--programs">
+              <a class="main-nav__link" href="#">Programas</a>
+              <ul id="sub-menu" class="sub-nav">
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link" href="environmental-management.html">Gestión ambiental</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link" href="peds.html">PEDS</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link" href="pgcs.html">PGCS</a>
+                </li>
+                <li class="sub-nav__item">
+                  <a class="sub-nav__link" href="technical-formation.html">Formación técnica</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="contact.html">Contacto</a>
+            </li>
+          </ul>
+          <ul class="btn-nav__cont">
+            <li class="btn-nav__item">
+              <a class="btn btn--volunteer" href="volunteering.html">Voluntariado</a>
+            </li>
+            <li class="btn-nav__item">
+              <a class="btn btn--donate" href="donate.html">Donar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -91,6 +91,47 @@
     </div>
   </section>
 
+  <section class="main-actions wrapper">
+    <h2 class="main-actions__title">¿Cómo funciona?</h2>
+    <p class="descrip__text">Dentro de las acciones principales de la gestión ambiental se encuentran:</p>
+    <div class="main-actions__wrapper-cards">
+      <div class="main-actions__cards">
+        <div class="main-actions__circle main-actions__circle--sprout">
+          <img src="./images/cards/sprout.svg" alt="">
+        </div>
+        <div class="main-actions__type main-actions__type--sprout">
+          <p class="descrip__text">Reforestación</p>
+        </div>
+      </div>
+      <div class="main-actions__cards">
+        <div class="main-actions__circle main-actions__circle--agronomy">
+          <img src="./images/cards/agronomy.svg" alt="">
+        </div>
+        <div class="main-actions__type main-actions__type--agronomy">
+          <p class="descrip__text">Jardines biodiversos</p>
+        </div>
+      </div>
+    </div>
+    <div class="main-actions__wrapper-cards">
+      <div class="main-actions__cards">
+        <div class="main-actions__circle main-actions__circle--outline">
+          <img src="./images/cards/duck.svg" alt="">
+        </div>
+        <div class="main-actions__type main-actions__type--outline">
+          <p class="descrip__text">Gestión del paisaje y la biodiversidad</p>
+        </div>
+      </div>
+      <div class="main-actions__cards">
+        <div class="main-actions__circle main-actions__circle--bird">
+          <img src="./images/cards/bird.svg" alt="">
+        </div>
+        <div  class="main-actions__type main-actions__type--bird">
+          <p class="descrip__text">Avifauna</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer role="contentinfo">
     <section class="footer__wrapper">
       <section  class="contact">
@@ -125,7 +166,6 @@
       </section>
     </section>
   </footer>
-
   <script src="js/menu.js"></script>
 </body>
 

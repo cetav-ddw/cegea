@@ -1,5 +1,5 @@
 .brand {
-  background: transparent url("../../images/logo/logo.png") no-repeat;
+  background: transparent url("../images/logo/logo.png") no-repeat;
   background-size: contain;
   content: '';
   display: block;
@@ -7,8 +7,21 @@
   margin: 0 0 1rem 1rem;
   width: 191px;
 
+  @media (min-width: $breakpoint-md) {
+    margin-top: 1rem;
+  }
   @media (min-width: 850px) {
-    background-image: url("../../images/logo/logo2x.png");
+    background: url("../images/logo/logo2x.png")  no-repeat;
+    background-position: center center;
+    background-size: 140px;
     margin-left: 0;
+    width: 20%;
+  }
+  @media (min-width: $breakpoint-lg) {
+    background-size: 155px;
+    width: 20%
+  }
+  @media (min-width: 1280px) {
+    background-size: 200px;
   }
 }

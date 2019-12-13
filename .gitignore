@@ -1,6 +1,7 @@
 .sass-cache
 /src/css/
 *.css
+/dist
 
 /node_modules
 

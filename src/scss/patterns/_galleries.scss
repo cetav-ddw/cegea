@@ -6,8 +6,8 @@
   width: 90%;
 
   @media (min-width: $breakpoint-md) {
-    margin: 30px auto 50px;
     flex-direction: row;
+    margin: 30px auto;
     width: 100%;
   }
   @media (min-width: $breakpoint-md) {
@@ -17,7 +17,7 @@
 
 .gallery__item {
   align-self: center;
-  width: 80%;
+  width: 90%;
 
   @media (min-width: $breakpoint-md) {
     max-width: 50%;
@@ -38,7 +38,18 @@
   }
 }
 
+.gallery-container--single {
+  display: flex;
+  justify-content: center;
+  margin: 30px auto;
+  width: 90%;
+}
+
 .gallery__single-img {
-  width: 100%;
   max-width: 850px;
+  width: 90%;
+
+  @media (min-width: $breakpoint-md) {
+    width: 100%;
+  }
 }

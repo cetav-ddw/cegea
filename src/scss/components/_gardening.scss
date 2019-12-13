@@ -1,0 +1,27 @@
+.arrows-green {
+  width: 40px;
+
+  @media (min-width: $breakpoint-sm) {
+    width: 50px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: 70px;
+  }
+}
+
+.calendar-icon {
+  width: 45px;
+
+  @media (min-width: 580px) {
+    width: 70px;
+  }
+  @media (min-width: $breakpoint-md) {
+    width: auto;
+  }
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+}

@@ -45,3 +45,28 @@
         flex-direction: row;
     }
 }
+
+.main-actions__circle--enviroment{
+    background: #5F9750;
+}
+.main-actions__type--enviroment{
+    background:#75A667;
+}
+
+.main-actions__type--water{
+    background:#E9C13A;
+}
+.main-actions__circle--water{
+    background: #DCAE12;
+}
+.main-actions__circle--earth{
+    background: #EB751F;
+}
+.main-actions__type--earth{
+    background: #EF8538;
+}
+
+.information__title{
+    font-weight: bolder;
+    color: #EB751F; 
+}

@@ -1,5 +1,9 @@
 .main-actions {
   padding: 30px 10px;
+
+  @media (min-width: $breakpoint-md) {
+    margin-bottom: 40px;
+  }
 }
 
 .main-actions__wrapper-cards {

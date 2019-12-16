@@ -4,7 +4,7 @@ header[role="banner"] {
   padding: 0;
 
   @media (min-width: $breakpoint-md) {
-    height: 143px;
+    height: 85px;
   }
   @media (min-width: $breakpoint-lg) {
     height: 95px;
@@ -14,8 +14,11 @@ header[role="banner"] {
 #has-nav-section {
   height: 210px;
 
-  @media (min-width: $breakpoint-md) {
-    height: 205px;
+  @media (min-width: 565px) {
+    height: 195px;
+  }
+  @media (min-width: 850px) {
+    height: 160px;
   }
   @media (min-width: $breakpoint-lg) {
     height: 160px;
@@ -63,6 +66,37 @@ header[role="banner"] {
 
   @media (min-width: $breakpoint-md) {
     flex-wrap: nowrap;
+  }
+}
+.nav-sections__list--three {
+  flex-wrap: nowrap;
+
+  li {
+    width: 40%;
+    padding: 15px;
+  }
+}
+
+.nav-sections__list--less {
+  flex-wrap: nowrap;
+
+  li {
+    padding: 22px 15px;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 15px;
+    }
+  }
+}
+
+.nav-sections__list--two {
+
+  li {
+    padding: 6px;
+
+    @media (min-width: $breakpoint-md) {
+      padding: 13px;
+    }
   }
 }
 

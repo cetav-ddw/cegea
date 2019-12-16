@@ -71,6 +71,10 @@
 
 .scroll-down--management {
   margin: 65px auto;
+
+  @media (min-width: $breakpoint-md) {
+    margin: 120px auto;
+  }
 }
 
 .main-actions__wrapper-img {

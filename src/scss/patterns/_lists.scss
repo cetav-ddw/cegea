@@ -1,0 +1,50 @@
+.numbered-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.numbered-list__icon {
+  align-self: flex-start;
+  background-color: $orange;
+  color: $white;
+  line-height: 25px;
+  margin-right: 15px;
+  padding: 10px 15px;
+}
+
+.numbered-list__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.numbered-list__item:first-child {
+  span {
+    padding: 10px 17.5px;
+  }
+}
+
+.numbered-list__container {
+  p {
+    margin: 0;
+  }
+}
+
+.standard-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.standard-list__item {
+  align-items: center;
+  display: flex;
+}
+
+.standard-list__item::before {
+  color: $green; 
+  content: "\2022  ";
+  font-size: 3rem;
+  margin-right: 15px;
+  text-align: center;
+}

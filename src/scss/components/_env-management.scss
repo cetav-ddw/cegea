@@ -69,7 +69,25 @@
   }
 }
 
-.question__text{
-  color: $green;
+.scroll-down--management {
+  margin: 65px auto;
+
+  @media (min-width: $breakpoint-md) {
+    margin: 120px auto;
+  }
+}
+
+.main-actions__wrapper-img {
+  display: flex;
+  flex-wrap: wrap;
+
+  img {
+    max-width: 100%;
+    margin: 20px auto;
+
+    @media (min-width: $breakpoint-md) {
+      width: 45%;
+    }
+  }
 }
 

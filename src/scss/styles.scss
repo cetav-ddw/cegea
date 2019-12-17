@@ -2,6 +2,9 @@
 @import 'util/normalize';
 @import 'base';
 @import 'patterns/buttons';
+@import 'patterns/circles';
+@import 'patterns/galleries';
+@import 'patterns/lists';
 @import 'patterns/text';
 @import 'patterns/card';
 @import 'util/layout';
@@ -14,6 +17,7 @@
 @import 'components/env-management';
 @import 'components/pgcs';
 @import 'components/footer';
+@import 'components/gardening';
 @import 'components/header';
 @import 'components/heroimage';
 @import 'components/impact';
@@ -24,3 +28,4 @@
 @import 'components/odd-gallery';
 @import 'components/feats';
 @import 'components/actions';
+@import 'components/peds';

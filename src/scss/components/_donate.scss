@@ -1,0 +1,31 @@
+.account-table {
+    background-color: $white;
+    border: 2px $green solid;
+    border-collapse: collapse;
+    color: #000;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.account-table__subtitle {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-top: 0;
+}
+
+.account-table__td{
+    border: 2px $green solid;
+    padding: 3px;
+}
+
+.account-table__theader {
+    background-color: $green;
+    color: $white;
+}
+
+.account-table__title {
+    margin-bottom: 0;
+    margin-top: 10px;
+    padding-bottom: 0;
+}

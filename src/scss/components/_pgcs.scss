@@ -1,0 +1,72 @@
+.pgcs-offer{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.descrip__container{
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: $orange-light;
+    max-width: 68%;
+    box-shadow: 10px 4px 35px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    padding: 14px 0;
+    margin: 13px;
+    display: flex;
+    justify-content: center;
+}
+
+.pgcs-offer__descrip{
+    margin: 0;
+    align-self: center;
+}
+
+.pgcs-offer__img{
+    max-width: 68%;
+}
+
+.pgcs-offer__arrow{
+    display: block;
+    width: 7%;
+    margin: 10px;
+}
+
+.pgcs-offer__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $breakpoint-md) {
+        flex-direction: row;
+    }
+}
+
+.main-actions__circle--enviroment{
+    background: #5F9750;
+}
+.main-actions__type--enviroment{
+    background:#75A667;
+}
+
+.main-actions__type--water{
+    background:#E9C13A;
+}
+.main-actions__circle--water{
+    background: #DCAE12;
+}
+.main-actions__circle--earth{
+    background: #EB751F;
+}
+.main-actions__type--earth{
+    background: #EF8538;
+}
+
+.information__title{
+    font-weight: bolder;
+    color: #EB751F; 
+}

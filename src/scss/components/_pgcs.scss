@@ -1,57 +1,57 @@
 .pgcs {
   padding: 5px;
 
-	h2 {
-		margin: 30px 0;
-	}
+  h2 {
+    margin: 30px 0;
+  }
 
-	.cegea__img {
-		margin: 20px auto;
-	}
+  .cegea__img {
+    margin: 20px auto;
+  }
 
-	.investigation__wrapper-card {
-		padding: 10px;
-	}
+  .investigation__wrapper-card {
+    padding: 10px;
+  }
 }
 
 .pgcs-offer {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	list-style: none;
-	padding: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
 }
 
 .descrip__container {
-	background-color: $orange-light;
-	box-shadow: 10px 4px 35px rgba(0, 0, 0, 0.25);
-	color: #fff;
-	display: flex;
-	font-size: 1.25rem;
-	font-weight: 600;
-	justify-content: center;
-	margin: 13px;
-	max-width: 68%;
-	padding: 14px 0;
-	text-align: center;
-	width: 100%;
+  background-color: $orange-light;
+  box-shadow: 10px 4px 35px rgba(0, 0, 0, 0.25);
+  color: #fff;
+  display: flex;
+  font-size: 1.25rem;
+  font-weight: 600;
+  justify-content: center;
+  margin: 13px;
+  max-width: 68%;
+  padding: 14px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .pgcs-offer__descrip {
-	margin: 0;
-	align-self: center;
+  margin: 0;
+  align-self: center;
 }
 
 .stanndard-list--pgcs {
-	padding: 10px;
+  padding: 10px;
 
-	@media (min-width: $breakpoint-md) {
-		padding: 20px;
-	}
+  @media (min-width: $breakpoint-md) {
+    padding: 20px;
+  }
 
-	li {
-		margin: 20px 0;
-	}
+  li {
+    margin: 20px 0;
+  }
 }
 
 .pgcs-offer__img {
@@ -59,27 +59,27 @@
 }
 
 .pgcs-offer__arrow {
-	display: block;
-	margin: 10px;
-	width: 7%;
+  display: block;
+  margin: 10px;
+  width: 7%;
 }
 
 .pgcs-offer__item {
-	align-items: center;
-	display: flex;
-	flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
-	@media (min-width: $breakpoint-md) {
-		flex-direction: row;
-	}
+  @media (min-width: $breakpoint-md) {
+    flex-direction: row;
+  }
 }
 
 .btn--moreinfo {
-	margin-left: 15px;
+  margin-left: 15px;
 }
 
 .main-actions--pgcs {
-	margin: 30px 0;
+  margin: 30px 0;
 }
 
 .main-actions__circle--enviroment {
@@ -107,10 +107,10 @@
 }
 
 .information__title {
-	font-weight: bolder;
-	color: #EB751F; 
+  font-weight: bolder;
+  color: #EB751F; 
 }
 
 .information__title {
-	margin:  40px 0;
+  margin:  40px 0;
 }

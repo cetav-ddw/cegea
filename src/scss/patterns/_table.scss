@@ -15,12 +15,12 @@
     }
 }    
  
-
 .account-table__container-title {
     background-color: $green;
     border: 1px $green-light solid;
     border-bottom: none;
     color: $white;
+    padding: 0 10px;
     
     @media (min-width: 600px) {
         border: 2px $green-light solid;
@@ -71,6 +71,7 @@
     &::before {
         content: attr(data-label);
         float: left;
+        font-size: .7rem;
         font-weight: bolder;
         text-transform: uppercase;
     }

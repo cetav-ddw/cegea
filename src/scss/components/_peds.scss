@@ -173,6 +173,24 @@
   }
 }
 
+.stanndard-list--peds {
+  @media (min-width: $breakpoint-md) {
+    padding-left: 25px;
+  }
+}
+
+.numbered-list__container {
+  ul {
+    list-style: none;
+  }
+}
+
+.numbered-list--peds {
+  @media (min-width: $breakpoint-md) {
+    margin: 40px 0;
+  }
+}
+
 .peds__wrapper-img {
   display: flex;
   flex-direction: column-reverse;

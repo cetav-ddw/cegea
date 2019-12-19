@@ -1,28 +1,96 @@
 .account-table {
-    background-color: $white;
-    border: 2px $green solid;
     border-collapse: collapse;
-    color: #000;
-    margin: 0 auto;
-    max-width: 1000px;
-    width: 100%;
+    margin: 25px auto;
+    width: 95%;
+
+    @media (min-width: 600px) {
+        background-color: $white;
+        border: 2px $green-light solid;
+        color: #000;
+        margin: 30px auto;
+    }
+    @media (min-width: $breakpoint-md) {
+        max-width: 1000px;
+        width: 100%;
+    }
+}    
+ 
+.account-table__container-title {
+    background-color: $green;
+    border: 1px $green-light solid;
+    border-bottom: none;
+    color: $white;
+    padding: 0 10px;
+    
+    @media (min-width: 600px) {
+        border: 2px $green-light solid;
+        border-bottom: none;
+    }
+}
+
+.account-table__header {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+
+    @media (min-width: 600px) {
+        background-color: $green;
+        border: 2px $green-light solid;
+        clip: inherit;
+        color: $white;
+        height: auto;
+        margin: 0;
+        padding: 5px;
+        position: relative;
+        text-transform: uppercase;
+        width: auto;
+    }
 }
 
 .account-table__subtitle {
     margin-top: 5px;
     margin-bottom: 10px;
     padding-top: 0;
-}
+}    
 
-.account-table__td{
-    border: 2px $green solid;
-    padding: 3px;
-}
 
-.account-table__theader {
-    background-color: $green;
-    color: $white;
-}
+.account-table__cell{
+    border: 1px $green-light solid;
+    display: block;
+    font-size: .8em;
+    text-align: right;
+
+    &:last-child {
+        border-bottom: 3px $green-light solid;
+    }
+    &::before {
+        content: attr(data-label);
+        float: left;
+        font-size: .7rem;
+        font-weight: bolder;
+        text-transform: uppercase;
+    }
+    @media (min-width: 600px) {
+        border: 2px $green-light solid;
+        display: table-cell;
+        font-size: 1em;
+        padding: 3px;
+        text-align: center;
+
+        &::before {
+            content: '';
+            float: initial;
+        }
+        &:last-child {
+            border-bottom: 2px $green-light solid;
+        }
+    }
+}    
 
 .account-table__title {
     margin-bottom: 0;

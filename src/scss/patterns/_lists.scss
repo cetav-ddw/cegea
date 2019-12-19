@@ -39,6 +39,14 @@
 .standard-list__item {
   align-items: center;
   display: flex;
+
+  @media (min-width: $breakpoint-md) {
+    font-size: 1.125rem;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    font-size: 1.2rem;
+  }
 }
 
 .standard-list__item::before {
